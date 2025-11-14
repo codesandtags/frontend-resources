@@ -1,8 +1,11 @@
-# Front End Documentation 2024 🚀
+# Frontend Resources 🚀
 
-> 🔥 🔥A curated list of awesome useful resources for Front-End 🔥
+> A curated list of awesome useful resources for Front-End developers. This list has been updated through years of experience as a Front-End developer.
 
-# Index
+[![GitHub stars](https://img.shields.io/github/stars/codesandtags/frontend-resources?style=social)](https://github.com/codesandtags/frontend-resources)
+[![GitHub forks](https://img.shields.io/github/forks/codesandtags/frontend-resources?style=social)](https://github.com/codesandtags/frontend-resources)
+
+## 📑 Table of Contents
 
 - [Accessibility - A11Y](#accessibility---a11y)
 - [Angular in general & Angular 5+](#angular-in-general--angular-5)
@@ -14,7 +17,7 @@
 - [Bundlers (Webpack)](#bundlers-webpack)
 - [CSS3 & SCSS](#css3--scss)
 - [Challenges online for JavaScript](#challenges-online-for-javascript)
-- [Crowdfunding sites to achieve the ideas and creative projects](#crowdfunding-sites-to-achieve-the-ideas-and-creative-projects)
+- [Crowdfunding Sites to Achieve Ideas and Creative Projects](#crowdfunding-sites-to-achieve-ideas-and-creative-projects)
 - [Databases](#databases)
 - [Data Visualization / D3](#data-visualization--d3)
 - [EmberJS](#emberjs)
@@ -24,7 +27,7 @@
 - [HTML5](#html5)
 - [JavaScript / TypeScript](#javascript--typescript)
 - [JavaScript Testing](#javascript-testing)
-- [Jekyll Templates](#jekyll-templates)
+- [Static Websites Generators](#static-websites-generators)
 - [Micro Front-End](#micro-front-end)
 - [Monitoring apps and logging messages](#monitoring-apps-and-logging-messages)
 - [NodeJS](#nodejs)
@@ -62,7 +65,7 @@
 ## Angular in general & Angular 5+
 
 | Description                                              |                                                                URL                                                                 |
-| -------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------: | --------------------------------- | ---------------------------------------------- |
+| -------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------: |
 | Good fundamentals and basics for Angular 2               |                                          https://egghead.io/series/angular-2-fundamentals                                          |
 | Advanced Structure for Angular 1.x projects              |                                                       https://omarfouad.com/                                                       |
 | Rangle.io : Angular 2 Training                           |                                      https://www.gitbook.com/book/rangle-io/ngcourse2/details                                      |
@@ -74,7 +77,8 @@
 | Pluralsigh Angular 2                                     |                   https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents                   |
 | Fetching on Angular 2                                    |                                      https://namitamalik.github.io/Fetching-Data-in-Angular2/                                      |
 | Deploy angular 2 on heroku                               |       https://medium.com/@ryanchenkie_40935/angular-cli-deployment-host-your-angular-2-app-on-heroku-3f266f13f352#.thginc3zg       |
-| Custom Themes with Angular Material                      |                       https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html                       | Practice Excercises for Angular 2 | https://jcoop.io/angular-2-practice-exercises/ |
+| Custom Themes with Angular Material                      |                       https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html                       |
+| Practice Exercises for Angular 2                         |                                                          https://jcoop.io/angular-2-practice-exercises/                            |
 | Augury to Debug Angular applications                     |                                                     https://augury.angular.io/                                                     |
 | Deploy Angular 4 on Heroku                               |                         https://medium.com/@ervib/deploy-angular-4-app-with-express-to-heroku-6113146915ca                         |
 | Using env variables in Angular 4                         |                                 http://www.chrisjmendez.com/2017/05/24/using-dotenv-with-angular/                                  |
@@ -265,7 +269,7 @@
 | Leet Code                                       |                     https://leetcode.com/                      |
 | JavaScript Problem and solutions                | https://github.com/jeantimex/javascript-problems-and-solutions |
 
-## Crowdfunding sites to achieve the ideas and creative projects.
+## Crowdfunding Sites to Achieve Ideas and Creative Projects
 
 | Description                   |                   URL                   |
 | ----------------------------- | :-------------------------------------: |
@@ -383,13 +387,20 @@
 | Ava configuration                      | https://hackernoon.com/ava-low-config-testing-for-javascript-71bd2d958745#.99ro16qxe |
 | Serenity JS                            |                               http://serenity-js.org/                                |
 
-## Static websites generators
+## Static Websites Generators
 
 | Description                                            |                          URL                           |
 | ------------------------------------------------------ | :----------------------------------------------------: |
 | Ramarulandac portfolio based on Indigo Jekyll Template | https://github.com/ramarulandac/ramarulandac.github.io |
 | Jekyll                                                 |                 https://jekyllrb.com/                  |
 | Hugo                                                   |                   http://gohugo.io/                    |
+
+## Micro Front-End
+
+| Description                                  |                          URL                           |
+| -------------------------------------------- | :----------------------------------------------------: |
+| One Framework to handle the micro front-ends |               https://single-spa.js.org/               |
+| Micro Front-End Article                      | https://martinfowler.com/articles/micro-frontends.html |
 
 ## NodeJS
 
@@ -693,13 +704,6 @@
 | Global Statistics for Web                                                         |                                            https://gs.statcounter.com/                                            |
 | Front-End Full Stack Course                                                       |                                           https://fullstackopen.com/en                                            |
 
-## Micro Front-End
-
-| Description                                  |                          URL                           |
-| -------------------------------------------- | :----------------------------------------------------: |
-| One Framework to handle the micro front-ends |               https://single-spa.js.org/               |
-| Micro Front-End Article                      | https://martinfowler.com/articles/micro-frontends.html |
-
 ## Web VR / Virtual Reality
 
 | Description                                          |                             URL                              |
@@ -711,3 +715,36 @@
 | Build immersive web VR using Vizor                   |                      https://vizor.io/                       |
 | glTF GL Transmission Format for 3D assets            |        https://github.com/KhronosGroup/glTF/tree/2.0         |
 | Added link to threejs page JavaScript 3D             |                     https://threejs.org/                     |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have a great frontend resource that should be included in this list, please:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-resource`)
+3. Add your resource following the existing format
+4. Commit your changes (`git commit -m 'Add amazing resource'`)
+5. Push to the branch (`git push origin feature/amazing-resource`)
+6. Open a Pull Request
+
+### Guidelines
+
+- Ensure the resource is relevant to frontend development
+- Follow the existing table format: `| Description | URL |`
+- Keep descriptions concise and informative
+- Verify that links are working and up-to-date
+- Add resources to the appropriate category
+
+## 📝 License
+
+This project is open source and available for anyone to use and contribute to.
+
+## ⭐ Show Your Support
+
+If you find this resource list helpful, please consider giving it a star on GitHub!
+
+---
+
+**Made with ❤️ by the frontend community**

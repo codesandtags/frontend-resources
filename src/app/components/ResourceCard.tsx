@@ -1,4 +1,3 @@
-import React from "react";
 import { Heart, ExternalLink } from "lucide-react";
 import { Resource } from "../types/resource";
 import { Tag } from "./Tag";

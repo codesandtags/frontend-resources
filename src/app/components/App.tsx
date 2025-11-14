@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { Github, PlusCircle } from "lucide-react";
 import { SearchBar } from "./SearchBar";
 import { ResourceCard } from "./ResourceCard";
