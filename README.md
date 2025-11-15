@@ -92,6 +92,7 @@
 - [JavaScript: The Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) - Classic book by Douglas Crockford. Still relevant for understanding JavaScript fundamentals.
 - [JavaScript.info](https://javascript.info/) - Modern JavaScript tutorial. Covers ES6+ and modern practices.
 - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) - The most reliable JavaScript reference. Always up-to-date and comprehensive.
+- [RxJS Documentation](https://rxjs.dev/) - Official RxJS docs. Comprehensive guides and API reference.
 - [State of JS](https://stateofjs.com/) - Annual survey of JavaScript ecosystem. See what
 - [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript. Adds type safety and better tooling.
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) - Official TypeScript documentation. The best place to learn TypeScript.
@@ -135,19 +136,17 @@
 
 ### React Ecosystem
 
-- [NestJS](https://nestjs.com/) - Progressive Node.js framework. Great for building scalable server-side applications.
 - [Next.js](https://nextjs.org/) - The React framework for production. Server-side rendering, static generation, and more out of the box.
-- [NgRx](https://ngrx.io/) - Reactive state management for Angular. Inspired by Redux but built for Angular.
 - [React Documentation](https://react.dev/) - The new React docs are the best place to learn modern React. Interactive examples and clear explanations.
 - [React Hook Form](https://react-hook-form.com/) - Best form library for React. Minimal re-renders and great performance.
 - [React Query (TanStack Query)](https://tanstack.com/query) - The best data fetching library for React. Handles caching, synchronization, and updates automatically.
 - [React Router](https://reactrouter.com/) - The standard routing library for React. Declarative and powerful.
 - [Redux Toolkit](https://redux-toolkit.js.org/) - The official, opinionated way to write Redux. Much simpler than traditional Redux.
-- [RxJS Documentation](https://rxjs.dev/) - Official RxJS docs. Comprehensive guides and API reference.
 
 ### Angular
 
 - [Angular Documentation](https://angular.io/) - Official Angular docs. Comprehensive guides and API reference.
+- [NgRx](https://ngrx.io/) - Reactive state management for Angular. Inspired by Redux but built for Angular.
 
 ### Vue.js
 
@@ -220,6 +219,7 @@
 - [LocalTunnel](https://localtunnel.github.io/www/) - Expose localhost to the internet. Great for testing webhooks.
 - [LogRocket](https://logrocket.com/) - Session replay and frontend monitoring. See exactly what users experience.
 - [MJML](https://mjml.io/) - Framework for creating responsive emails that work across all email clients. Saves hours of email debugging.
+- [NestJS](https://nestjs.com/) - Progressive Node.js framework. Great for building scalable server-side applications.
 - [ngrok](https://ngrok.com/) - Secure tunnels to localhost. More reliable than LocalTunnel.
 - [npm trends](https://npmtrends.com/) - Compare npm package download trends. See what
 - [npms](https://npms.io/) - Better npm search. Finds packages by quality, not just popularity.

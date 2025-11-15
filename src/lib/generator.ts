@@ -39,7 +39,6 @@ const categoryToSectionMap: Record<string, string> = {
   "Design Resources": "Design Systems & UI/UX",
   Utilities: "Development Tools",
   "Web VR": "Web VR / Virtual Reality",
-  "State Management": "React Ecosystem", // State management is part of React ecosystem
 };
 
 /**
@@ -51,6 +50,15 @@ function getResourceSection(resource: Resource): string {
 
   // Framework-specific mappings
   if (category === "Framework") {
+    // Check for backend frameworks first to avoid misclassification
+    if (
+      tagsLower.includes("backend") ||
+      tagsLower.includes("server") ||
+      (tagsLower.includes("nodejs") && !tagsLower.includes("react"))
+    ) {
+      // Backend frameworks should go to Development Tools in a frontend-focused repo
+      return "Development Tools";
+    }
     if (tagsLower.includes("react") || tagsLower.includes("nextjs")) {
       return "React Ecosystem";
     }
@@ -75,7 +83,8 @@ function getResourceSection(resource: Resource): string {
     if (tagsLower.includes("micro-frontends")) {
       return "Micro Front-End";
     }
-    return "React Ecosystem"; // Default
+    // No default - let it fall through to category mapping or general fallback
+    // This requires explicit categorization to avoid misplacement
   }
 
   // Tool-specific mappings
@@ -116,6 +125,20 @@ function getResourceSection(resource: Resource): string {
       return "Development Tools";
     }
     return "Development Tools"; // Default for tools
+  }
+
+  // State Management category - check tags to determine framework-specific placement
+  if (category === "State Management") {
+    // Angular-specific state management (e.g., NgRx)
+    if (tagsLower.includes("angular")) {
+      return "Angular";
+    }
+    // React-specific state management (e.g., Redux, React Query)
+    if (tagsLower.includes("react")) {
+      return "React Ecosystem";
+    }
+    // Framework-agnostic libraries (e.g., RxJS) go to JavaScript/TypeScript section
+    return "JavaScript / TypeScript";
   }
 
   // Learning resources mapping - check tags first

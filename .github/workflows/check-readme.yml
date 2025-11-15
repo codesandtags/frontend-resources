@@ -6,6 +6,7 @@ on:
       - "src/data/resources.json"
       - "src/lib/generator.ts"
       - "src/lib/layout.json"
+      - "README.template.md"
     types: [opened, synchronize, reopened]
   push:
     branches:
@@ -15,6 +16,7 @@ on:
       - "src/data/resources.json"
       - "src/lib/generator.ts"
       - "src/lib/layout.json"
+      - "README.template.md"
 
 jobs:
   check-readme:
