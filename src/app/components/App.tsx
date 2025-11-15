@@ -6,6 +6,7 @@ import { CategoryFilter } from "./CategoryFilter";
 import type { Category } from "../types/resource";
 
 import { getResources } from "../../lib/resources";
+import { supabase } from "../../lib/supabase";
 import Image from "next/image";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(
     null
   );
-  const [likes, setLikes] = useState<Record<string, number>>({});
+  const [likeCounts, setLikeCounts] = useState<Map<string, number>>(new Map());
+  const [userLikes, setUserLikes] = useState<Set<string>>(new Set());
   const [githubStars, setGithubStars] = useState<number | null>(null);
 
   useEffect(() => {
@@ -33,6 +35,57 @@ function App() {
     };
 
     fetchGithubStars();
+  }, []);
+
+  useEffect(() => {
+    async function fetchData() {
+      // Sign in anonymously if not already signed in
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+
+      if (!session) {
+        // Sign in anonymously
+        const { data: authData, error: authError } = await supabase.auth.signInAnonymously();
+        if (authError) {
+          console.error("Error signing in anonymously:", authError);
+          // If anonymous auth is not enabled, this will fail
+          // User needs to enable it in Supabase Dashboard > Authentication > Providers > Anonymous
+        }
+      }
+
+      // A) Fetch all public like counts
+      const { data: countsData } = await supabase
+        .from("resources")
+        .select("id, like_count");
+
+      if (countsData) {
+        const countsMap = new Map(
+          countsData.map((r) => [r.id, r.like_count || 0])
+        );
+        setLikeCounts(countsMap);
+      }
+
+      // B) Fetch this user's (anonymous) likes
+      // Get session again after potential sign-in
+      const {
+        data: { session: currentSession },
+      } = await supabase.auth.getSession();
+
+      if (currentSession) {
+        const { data: likesData } = await supabase
+          .from("likes")
+          .select("resource_id")
+          .eq("user_id", currentSession.user.id);
+
+        if (likesData) {
+          const likesSet = new Set(likesData.map((l) => l.resource_id));
+          setUserLikes(likesSet);
+        }
+      }
+    }
+
+    fetchData();
   }, []);
 
   const resources = useMemo(() => getResources(), []);
@@ -63,11 +116,55 @@ function App() {
     });
   }, [resources, search, selectedCategory]);
 
-  const handleLike = (id: string) => {
-    setLikes((prev) => ({
-      ...prev,
-      [id]: (prev[id] || 0) + 1,
-    }));
+  const handleLikeToggle = async (resourceId: string) => {
+    try {
+      // Ensure user is authenticated (sign in anonymously if needed)
+      let {
+        data: { session },
+      } = await supabase.auth.getSession();
+
+      if (!session) {
+        // Sign in anonymously
+        const { data: authData, error: authError } = await supabase.auth.signInAnonymously();
+        if (authError) {
+          console.error("Error signing in anonymously:", authError);
+          return; // Exit early if auth fails
+        }
+        session = authData.session;
+      }
+
+      // A) Optimistic UI Update (Instant feedback)
+      const isCurrentlyLiked = userLikes.has(resourceId);
+      const newLikedSet = new Set(userLikes);
+      const newLikeCounts = new Map(likeCounts);
+      const currentCount = likeCounts.get(resourceId) || 0;
+
+      if (isCurrentlyLiked) {
+        newLikedSet.delete(resourceId);
+        newLikeCounts.set(resourceId, Math.max(0, currentCount - 1)); // Prevent negative
+      } else {
+        newLikedSet.add(resourceId);
+        newLikeCounts.set(resourceId, currentCount + 1);
+      }
+
+      setUserLikes(newLikedSet);
+      setLikeCounts(newLikeCounts);
+
+      // B) Call the secure backend Edge Function
+      const { error } = await supabase.functions.invoke("toggle-like", {
+        body: { resource_id: resourceId },
+        headers: {
+          Authorization: `Bearer ${session!.access_token}`,
+        },
+      });
+
+      if (error) {
+        throw error; // This will be caught by the catch block
+      }
+    } catch (error) {
+      console.error("Error toggling like:", error);
+      // TODO: Revert optimistic update on error
+    }
   };
 
   return (
@@ -140,17 +237,24 @@ function App() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {filteredResources.map((resource) => (
-            <ResourceCard
-              key={resource.id}
-              resource={{
-                ...resource,
-                category: resource.category as Category,
-                likes: (likes[resource.id] || 0),
-              }}
-              onLike={handleLike}
-            />
-          ))}
+          {filteredResources.map((resource) => {
+            // Get the dynamic data
+            const count = likeCounts.get(resource.id) || 0;
+            const isLiked = userLikes.has(resource.id);
+
+            return (
+              <ResourceCard
+                key={resource.id}
+                resource={{
+                  ...resource,
+                  category: resource.category as Category,
+                }}
+                likeCount={count}
+                isLiked={isLiked}
+                onLikeToggle={() => handleLikeToggle(resource.id)}
+              />
+            );
+          })}
         </div>
 
         {filteredResources.length === 0 && (

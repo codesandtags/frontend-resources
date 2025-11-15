@@ -5,10 +5,17 @@ import { TechIcon } from "./TechIcon";
 
 interface ResourceCardProps {
   resource: Resource;
-  onLike: (id: string) => void;
+  likeCount: number;
+  isLiked: boolean;
+  onLikeToggle: () => void;
 }
 
-export function ResourceCard({ resource, onLike }: ResourceCardProps) {
+export function ResourceCard({
+  resource,
+  likeCount,
+  isLiked,
+  onLikeToggle,
+}: ResourceCardProps) {
   return (
     <div
       className={`
@@ -18,11 +25,15 @@ export function ResourceCard({ resource, onLike }: ResourceCardProps) {
     >
       {/* Like button in top-right corner */}
       <button
-        onClick={() => onLike(resource.id)}
-        className="absolute top-4 right-4 flex items-center gap-1 bg-gray-800 rounded px-3 py-1.5 text-gray-400 hover:text-pink-400 hover:bg-gray-700 transition-colors z-10"
+        onClick={onLikeToggle}
+        className={`absolute top-4 right-4 flex items-center gap-1 bg-gray-800 rounded px-3 py-1.5 transition-colors z-10 ${
+          isLiked
+            ? "text-pink-400 hover:text-pink-300"
+            : "text-gray-400 hover:text-pink-400"
+        } hover:bg-gray-700`}
       >
-        <Heart className="h-4 w-4" />
-        <span className="text-sm">{resource.likes || 0}</span>
+        <Heart className={`h-4 w-4 ${isLiked ? "fill-current" : ""}`} />
+        <span className="text-sm">{likeCount}</span>
       </button>
 
       <div className="flex justify-between items-start mb-4 pr-20">
