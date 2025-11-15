@@ -5,7 +5,7 @@ import { ResourceCard } from "./ResourceCard";
 import { CategoryFilter } from "./CategoryFilter";
 import type { Category } from "../types/resource";
 
-import { resources } from "../data/resources";
+import { getResources } from "../../lib/resources";
 import Image from "next/image";
 
 function App() {
@@ -14,6 +14,8 @@ function App() {
     null
   );
   const [likes, setLikes] = useState<Record<string, number>>({});
+
+  const resources = useMemo(() => getResources(), []);
 
   const filteredResources = useMemo(() => {
     return resources.filter((resource) => {
@@ -29,7 +31,7 @@ function App() {
 
       return matchesSearch && matchesCategory;
     });
-  }, [search, selectedCategory]);
+  }, [resources, search, selectedCategory]);
 
   const handleLike = (id: string) => {
     setLikes((prev) => ({
@@ -102,7 +104,8 @@ function App() {
               key={resource.id}
               resource={{
                 ...resource,
-                likes: resource.likes + (likes[resource.id] || 0),
+                category: resource.category as Category,
+                likes: (likes[resource.id] || 0),
               }}
               onLike={handleLike}
             />

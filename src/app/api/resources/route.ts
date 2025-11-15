@@ -1,12 +1,10 @@
 // app/api/resources/route.ts
 import { NextResponse } from "next/server";
-import { connectDB } from "@/app/lib/mongodb";
-import { Resource } from "@/app/models/Resource";
+import { getResources } from "@/lib/resources";
 
 export async function GET() {
   try {
-    await connectDB();
-    const resources = await Resource.find({});
+    const resources = getResources();
     return NextResponse.json(resources);
   } catch (error) {
     return NextResponse.json(

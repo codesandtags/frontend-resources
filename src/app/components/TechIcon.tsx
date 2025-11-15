@@ -1,33 +1,57 @@
-import { Code, Book, Gauge, Accessibility } from "lucide-react";
-import Image from "next/image";
+import {
+  Code,
+  Book,
+  Gauge,
+  Accessibility,
+  Shield,
+  Zap,
+  Layout,
+  TestTube,
+  Database,
+  Palette,
+  Globe,
+  FileCode,
+  GitBranch,
+  Image as ImageIcon,
+  Box,
+  Layers,
+  Rocket,
+  Webhook,
+  Sparkles,
+  Monitor,
+} from "lucide-react";
 
 interface TechIconProps {
-  name: string;
+  category: string;
   className?: string;
 }
 
-const defaultIcons = {
-  code: <Code className="code" />,
-  book: <Book className="book" />,
-  accessibility: <Accessibility className="accessibility" />,
-  performance: <Gauge className="gauge" />,
+const categoryIcons: Record<string, React.ComponentType<{ className?: string }>> = {
+  Framework: Code,
+  "UI Library": Layout,
+  Tool: Box,
+  Learning: Book,
+  Performance: Gauge,
+  Testing: TestTube,
+  "State Management": Database,
+  CSS: Palette,
+  TypeScript: FileCode,
+  Accessibility: Accessibility,
+  Security: Shield,
+  PWA: Zap,
+  Animation: Sparkles,
+  "Data Visualization": Monitor,
+  "3D & WebGL": Layers,
+  "Platforms & Hosting": Rocket,
+  "Public APIs": Webhook,
+  Git: GitBranch,
+  "Design Resources": ImageIcon,
+  Utilities: Globe,
+  "Web VR": Layers,
 };
 
-export function TechIcon({ name, className = "h-6 w-6" }: TechIconProps) {
-  // Convert name to simple-icons format (lowercase, remove spaces)
-  const iconName = name.toLowerCase().replace(/\s+/g, "");
+export function TechIcon({ category, className = "h-6 w-6" }: TechIconProps) {
+  const IconComponent = categoryIcons[category] || Code;
 
-  if (defaultIcons[name as keyof typeof defaultIcons]) {
-    return defaultIcons[name as keyof typeof defaultIcons];
-  }
-
-  return (
-    <Image
-      src={`https://cdn.simpleicons.org/${iconName}`}
-      alt={`${name} icon`}
-      className={className}
-      width={24}
-      height={24}
-    />
-  );
+  return <IconComponent className={className} />;
 }

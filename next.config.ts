@@ -12,10 +12,6 @@ const nextConfig: NextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   /* config options here */
-  // ... other config
-  env: {
-    MONGODB_URI: process.env.MONGODB_URI,
-  },
 };
 
 export default nextConfig;
