@@ -1,130 +1,76 @@
-# Frontend Resources 🚀
+# Awesome Frontend Resources [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of awesome useful resources for Front-End developers. This list has been updated through years of experience as a Front-End developer.
+> A curated list of awesome resources for frontend developers. This list has been compiled through years of experience in frontend development and includes the most useful tools, frameworks, libraries, and learning resources.
 
 [![GitHub stars](https://img.shields.io/github/stars/codesandtags/frontend-resources?style=social)](https://github.com/codesandtags/frontend-resources)
 [![GitHub forks](https://img.shields.io/github/forks/codesandtags/frontend-resources?style=social)](https://github.com/codesandtags/frontend-resources)
 
+**Please read the [contribution guidelines](CONTRIBUTING.md) before contributing.**
+
 ## 📑 Table of Contents
 
-- [Accessibility - A11Y](#accessibility---a11y)
-- [Angular in general & Angular 5+](#angular-in-general--angular-5)
-- [Animation on HTML + CSS + SVG](#animation-on-html--css--svg)
-- [Artificial Intelligence / AGI](#artificial-intelligence--agi)
-- [Awesome and mad projects on JavaScript / CSS 😱](#awesome-and-mad-projects-on-javascript--css-)
-- [Automation and Task](#automation-and-task)
-- [Books](#books)
-- [Bundlers (Webpack)](#bundlers-webpack)
-- [CSS3 & SCSS](#css3--scss)
-- [Challenges online for JavaScript](#challenges-online-for-javascript)
-- [Crowdfunding Sites to Achieve Ideas and Creative Projects](#crowdfunding-sites-to-achieve-ideas-and-creative-projects)
-- [Databases](#databases)
-- [Data Visualization / D3](#data-visualization--d3)
-- [EmberJS](#emberjs)
-- [Freelance Webs or Jobs Search Pages for Tech](#freelance-webs-or-jobs-search-pages-for-tech)
-- [Functional Programming in JavaScript](#functional-programming-in-javascript)
-- [Git](#git)
+### Start Broad
+
 - [HTML5](#html5)
+- [CSS3 & SCSS](#css3--scss)
 - [JavaScript / TypeScript](#javascript--typescript)
-- [JavaScript Testing](#javascript-testing)
-- [Static Websites Generators](#static-websites-generators)
-- [Micro Front-End](#micro-front-end)
-- [Monitoring apps and logging messages](#monitoring-apps-and-logging-messages)
-- [NodeJS](#nodejs)
-- [Other Interesting Articles or Pages](#other-interesting-articles-or-pages)
+
+### Core Concepts
+
+- [Accessibility (A11Y)](#accessibility-a11y)
 - [Performance](#performance)
-- [Progressive Web Apps / PWA](#progressive-web-apps--pwa)
-- [Public APIs](#public-apis)
-- [ReactJS & React Native](#reactjs--react-native)
-- [Regular Expressions](#regular-expressions)
-- [RxJs Reactive Programming with Javascript and Redux](#rxjs-reactive-programming-with-javascript-and-redux)
 - [Security](#security)
+- [Progressive Web Apps (PWA)](#progressive-web-apps-pwa)
 - [Service Workers](#service-workers)
-- [Sketching / Wireframing / Mockup template / Images](#sketching--wireframing--mockup-template--images)
-- [Static websites generators](#static-websites-generators)
-- [Transpiling JavaScript](#transpiling-javascript)
-- [UX & UI](#ux--ui)
-- [WebGL](#webgl)
+
+### Frameworks & Libraries
+
+- [React Ecosystem](#reactjs--react-native)
+- [Angular](#angular)
+- [Vue.js](#vuejs)
+- [Svelte](#svelte)
+- [Ember.js](#emberjs)
 - [Web Components](#web-components)
-- [WebTools for Front-End](#webtools-for-front-end)
+- [Micro Front-End](#micro-front-end)
+
+### Tooling
+
+- [Build Tools & Bundlers](#build-tools--bundlers)
+- [Transpiling & Compiling](#transpiling--compiling)
+- [Testing](#testing)
+- [Linting & Formatting](#linting--formatting)
+- [Task Runners & Automation](#task-runners--automation)
+- [Development Tools](#development-tools)
+
+### Beyond the Code
+
+- [Design Systems & UI/UX](#design-systems--uiux)
+- [Animation](#animation)
+- [Data Visualization](#data-visualization)
+- [3D & WebGL](#3d--webgl)
 - [Web VR / Virtual Reality](#web-vr--virtual-reality)
+- [Platforms & Hosting](#platforms--hosting)
+- [Learning Resources](#learning-resources)
+- [Public APIs](#public-apis)
+- [Other Resources](#other-resources)
 
-## Accessibility - A11Y
+---
 
-| Description                                              |                                                 URL                                                  |
-| -------------------------------------------------------- | :--------------------------------------------------------------------------------------------------: |
-| ChromeVox Extension                                      |                                      http://www.chromevox.com/                                       |
-| Web Content Accessibility Guidelines 2.0                 |                                    https://www.w3.org/TR/WCAG20/                                     |
-| Web Accessibility in mind                                |                              http://webaim.org/standards/wcag/checklist                              |
-| Great tool which tell you how accessible is your webpage |                                       http://wave.webaim.org/                                        |
-| WAI - ARIA Patterns                                      |                              https://www.w3.org/TR/wai-aria-practices/                               |
-| Plugin for Developer tools in Audits                     | https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb |
-| ARIA roles                                               |                         https://www.w3.org/TR/wai-aria/roles#abstract_roles                          |
-| Accessibility article                                    |        http://adrianroselli.com/2016/03/be-wary-of-accessibility-guarantees-from-vendors.html        |
+## Start Broad
 
-## Angular in general & Angular 5+
+### HTML5
 
-| Description                                              |                                                                URL                                                                 |
-| -------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------: |
-| Good fundamentals and basics for Angular 2               |                                          https://egghead.io/series/angular-2-fundamentals                                          |
-| Advanced Structure for Angular 1.x projects              |                                                       https://omarfouad.com/                                                       |
-| Rangle.io : Angular 2 Training                           |                                      https://www.gitbook.com/book/rangle-io/ngcourse2/details                                      |
-| Vaddin = Angular 2 + Material Design + PolymerJS         |                                                    https://vaadin.com/elements                                                     |
-| Projectes made using Angular                             |                                                 https://www.madewithangular.com/#/                                                 |
-| Example of sites built with angular                      |                                                  https://builtwith.angularjs.org/                                                  |
-| Site tu run examples with Angular                        |                                                          http://plnkr.co/                                                          |
-| Angular best practices                                   |                              https://scotch.io/tutorials/angularjs-best-practices-directory-structure                              |
-| Pluralsigh Angular 2                                     |                   https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents                   |
-| Fetching on Angular 2                                    |                                      https://namitamalik.github.io/Fetching-Data-in-Angular2/                                      |
-| Deploy angular 2 on heroku                               |       https://medium.com/@ryanchenkie_40935/angular-cli-deployment-host-your-angular-2-app-on-heroku-3f266f13f352#.thginc3zg       |
-| Custom Themes with Angular Material                      |                       https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html                       |
-| Practice Exercises for Angular 2                         |                                                          https://jcoop.io/angular-2-practice-exercises/                            |
-| Augury to Debug Angular applications                     |                                                     https://augury.angular.io/                                                     |
-| Deploy Angular 4 on Heroku                               |                         https://medium.com/@ervib/deploy-angular-4-app-with-express-to-heroku-6113146915ca                         |
-| Using env variables in Angular 4                         |                                 http://www.chrisjmendez.com/2017/05/24/using-dotenv-with-angular/                                  |
-| Explains what you need to do to update your app          |                                           https://angular-update-guide.firebaseapp.com/                                            |
-| Working with HttpInterceptors                            |        https://medium.com/@ryanchenkie_40935/angular-authentication-using-the-http-client-and-http-interceptors-2f9d1540eb8        |
-| Checklist for performance in Angular                     |                                      https://github.com/mgechev/angular-performance-checklist                                      |
-| Testing Snipets with Angular 4+                          |                        https://medium.com/spektrakel-blog/angular-testing-snippets-httpclient-d1dc2f035eb8                         |
-| Testing HttpClient in Angular 4+                         |                          https://medium.com/netscape/testing-with-the-angular-httpclient-api-648203820712                          |
-| Angular Material                                         |                                         https://material.angular.io/components/categories                                          |
-| Angular Flex Layout                                      |                                       https://tburleson-layouts-demos.firebaseapp.com/#/docs                                       |
-| Angular Google Maps                                      |                                                     https://angular-maps.com/                                                      |
-| One of the most complete Angular Courses                 |                                                    https://ultimateangular.com/                                                    |
-| How to build a website with angular and github pages     |                                https://scotch.io/@collinl65/deploying-angular4-app-to-github-pages                                 |
-| Why Angular has chosen Typescript                        |                                  https://vsavkin.com/writing-angular-2-in-typescript-1fa77c78d8e8                                  |
-| Added link for Unit Testing in Angular + Karma + Jasmine |                                https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/                                |
-| Write Angular apps live & online                         |                                                       https://stackblitz.com                                                       |
-| NG Conf 2018 Talks                                       |                                     https://nitayneeman.com/posts/all-talks-from-ng-conf-2018/                                     |
-| Understanding Angular Material                           |                     https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1                     |
-| Scalable Angular Architecture                            |                                    https://blog.strongbrew.io/A-scalable-angular2-architecture/                                    |
-| Scalable Angular Architecture                            |                            https://bulldogjob.pl/articles/539-scalable-angular-application-architecture                            |
-| Scalable JavaScript Architecture                         |                         https://es.slideshare.net/nzakas/scalable-javascript-application-architecture/108                          |
-| Micro Front-Ends approach                                |         https://medium.com/@tomsoderlund/micro-frontends-a-microservice-approach-to-front-end-web-development-f325ebdadc16         |
-| Angular Universal + Ngrx                                 |                          https://blog.upstate.agency/setting-up-angular-universal-with-ngrx-30d97102be4d                           |
-| Translating Angular Apps with ngx-translate              |                https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate                 |
-| Setting Angular with ngx-translate                       |                        https://medium.com/letsboot/translate-angular-4-apps-with-ngx-translate-83302fb6c10d                        |
-| Ivy explanation                                          |                                   https://herringtondarkholme.github.io/2018/02/19/angular-ivy/                                    |
-| Understanding Ivy Renderer                               |                           https://medium.com/@vyakymenko/understanding-angular-ivy-renderer-c9d07fc01b76                           |
-| Deploying Angular app in nginx with docker               |                                                    https://youtu.be/1jzztM7qJRY                                                    |
-| Installing nginx with homebrew                           |                         https://coderwall.com/p/dgwwuq/installing-nginx-in-mac-os-x-maverick-with-homebrew                         |
-| Performance on Angular Apps                              |                  https://blog.angular.io/3-tips-for-angular-runtime-performance-from-the-real-world-d467fbc8f66e                   |
-| Performance on Angular Apps 2                            |                      https://netbasal.com/optimizing-the-performance-of-your-angular-application-f222f1c16354                      |
-| Added authentication with Angular and Ngrx               |                        http://mherman.org/blog/2018/04/17/authentication-in-angular-with-ngrx/#.WvzoLtMvzOQ                        |
-| Angular 6 complete project and beautiful UI              | https://medium.com/@hamedbaatour/build-a-real-world-beautiful-web-app-with-angular-6-a-to-z-ultimate-guide-2018-part-i-e121dd1d55e |
-| Angular 6 summary features                               |                            https://medium.freecodecamp.org/angular-what-is-the-new-briefly-e6837348dd3a                            |
-| Angular testing great tutorial                           |                       https://blog.realworldfullstack.io/real-world-angular-part-9-unit-testing-c62ba20b1d93                       |
-| Nice courses to review :D rxjs, angular, vue             |                                                   https://coursetro.com/courses                                                    |
-| Ingrate Angular + Google Analytics                       |                               https://codeburst.io/using-google-analytics-with-angular-25c93bffaa18                                |
-| Host listener good practices                             |                             https://medium.com/claritydesignsystem/angular-pseudo-events-d4e7f89247ee                              |
-| Angular Routing pattern                                  |                   https://medium.com/@shairez/angular-routing-a-better-pattern-for-large-scale-apps-f2890c952a18                   |
-| Angular navigation query params                          |                           https://blog.angularindepth.com/refresh-current-route-in-angular-512a19d58f6e                            |
-| Deploy one build with multiple environment files         |         https://www.jvandemo.com/how-to-use-environment-variables-to-configure-your-angular-application-without-a-rebuild/         |
-| Compodoc for Angular                                     |                                                https://github.com/compodoc/compodoc                                                |
-| Performance for your angular projects                    |                                                      https://web.dev/angular                                                       |
-| Angular multilanguage datepicker                         |                https://medium.com/@kristinahertmann/multi-language-date-formats-with-angular-material-b8598415d117                 |
+| Description                                               |                                   URL                                   |
+| --------------------------------------------------------- | :---------------------------------------------------------------------: |
+| Things that should know about HTML5                       |                  http://diveintohtml5.info/index.html                   |
+| Great article and examples for _Responsive Images_        | http://cloudinary.com/blog/automatically_art_directed_responsive_images |
+| Cool Framework for Responsives Emails                     |                            https://mjml.io/                             |
+| MultiTouch on mobiles Great article with examples         |               http://www.html5rocks.com/es/mobile/touch/                |
+| Free videos cover for your background web pages or header |                          http://www.coverr.co/                          |
+| Themes using Bootstrap                                    |                         https://bootswatch.com/                         |
+| HTML 5 Cheat sheet                                        |               https://websitesetup.org/html5-cheat-sheet/               |
 
-## Animation on HTML + CSS + SVG
+### CSS3 & SCSS
 
 | Description                 |                        URL                        |
 | --------------------------- | :-----------------------------------------------: |
