@@ -435,19 +435,6 @@
     "addedOn": "2024-01-01"
   },
   {
-    "id": "es6-compatibility-table",
-    "title": "ES6 Compatibility Table",
-    "url": "http://kangax.github.io/compat-table/es6/",
-    "description": "Check browser support for ES6+ features. Updated regularly.",
-    "category": "Tool",
-    "tags": [
-      "javascript",
-      "es6",
-      "compatibility"
-    ],
-    "addedOn": "2024-01-01"
-  },
-  {
     "id": "mdn-javascript-guide",
     "title": "MDN JavaScript Guide",
     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
