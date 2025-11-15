@@ -1,14 +1,5 @@
 [
   {
-    "id": "dive-into-html5",
-    "title": "Dive Into HTML5",
-    "url": "http://diveintohtml5.info/index.html",
-    "description": "Classic comprehensive guide to HTML5 features. Still valuable for understanding semantic HTML and modern web standards.",
-    "category": "Learning",
-    "tags": ["html5", "semantic", "guide"],
-    "addedOn": "2024-01-01"
-  },
-  {
     "id": "responsive-images-guide",
     "title": "Responsive Images Guide",
     "url": "http://cloudinary.com/blog/automatically_art_directed_responsive_images",

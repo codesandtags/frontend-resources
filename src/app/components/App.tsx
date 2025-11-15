@@ -1,5 +1,5 @@
-import { useState, useMemo } from "react";
-import { Github, PlusCircle } from "lucide-react";
+import { useState, useMemo, useEffect } from "react";
+import { Github, PlusCircle, Star } from "lucide-react";
 import { SearchBar } from "./SearchBar";
 import { ResourceCard } from "./ResourceCard";
 import { CategoryFilter } from "./CategoryFilter";
@@ -14,6 +14,26 @@ function App() {
     null
   );
   const [likes, setLikes] = useState<Record<string, number>>({});
+  const [githubStars, setGithubStars] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Fetch GitHub stars count
+    const fetchGithubStars = async () => {
+      try {
+        const response = await fetch(
+          "https://api.github.com/repos/codesandtags/frontend-documentation"
+        );
+        if (response.ok) {
+          const data = await response.json();
+          setGithubStars(data.stargazers_count);
+        }
+      } catch (error) {
+        console.error("Failed to fetch GitHub stars:", error);
+      }
+    };
+
+    fetchGithubStars();
+  }, []);
 
   const resources = useMemo(() => getResources(), []);
 
@@ -69,6 +89,12 @@ function App() {
               >
                 <Github className="h-5 w-5" />
                 <span className="hidden sm:inline">GitHub</span>
+                {githubStars !== null && (
+                  <span className="flex items-center gap-1 text-sm">
+                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <span>{githubStars.toLocaleString()}</span>
+                  </span>
+                )}
               </a>
               <a
                 href="https://github.com/codesandtags/frontend-resources/blob/main/CONTRIBUTING.md"
