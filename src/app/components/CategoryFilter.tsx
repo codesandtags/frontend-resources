@@ -6,17 +6,22 @@ interface CategoryFilterProps {
 }
 
 const categories: Category[] = [
-  "Framework",
-  "UI Library",
-  "Tool",
-  "Learning",
-  "Performance",
-  "Testing",
-  "State Management",
+  // 1. Fundamentals
   "CSS",
   "TypeScript",
+  // 2. Frameworks & Ecosystem
+  "Framework",
+  "UI Library",
+  "State Management",
+  // 3. Core Concepts
   "Accessibility",
+  "Performance",
+  "Testing",
   "Security",
+  // 4. Tools & Types
+  "Tool",
+  "Learning",
+  "Design Resources",
   "PWA",
   "Animation",
   "Data Visualization",
@@ -24,7 +29,6 @@ const categories: Category[] = [
   "Platforms & Hosting",
   "Public APIs",
   "Git",
-  "Design Resources",
   "Utilities",
   "Web VR",
 ];
