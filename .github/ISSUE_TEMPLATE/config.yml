@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/codesandtags/frontend-resources/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📖 Documentation
+    url: https://github.com/codesandtags/frontend-resources/blob/main/README.md
+    about: Check the README for project information
+  - name: 🤝 Contributing Guide
+    url: https://github.com/codesandtags/frontend-resources/blob/main/CONTRIBUTING.md
+    about: Read our contributing guidelines before opening an issue
+

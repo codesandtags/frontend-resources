@@ -14,7 +14,7 @@ export function ResourceCard({ resource, onLike }: ResourceCardProps) {
       <div className="flex justify-between items-start mb-4">
         <div className="flex items-start gap-3">
           <div className="text-blue-400">
-            <TechIcon name={resource.iconName} />
+            <TechIcon category={resource.category} />
           </div>
           <div>
             <h3 className="text-xl font-semibold text-white mb-2">
@@ -49,10 +49,10 @@ export function ResourceCard({ resource, onLike }: ResourceCardProps) {
           className="flex items-center gap-1 text-gray-400 hover:text-pink-400 transition-colors"
         >
           <Heart className="h-4 w-4" />
-          <span>{resource.likes}</span>
+          <span>{resource.likes || 0}</span>
         </button>
         <span className="text-gray-500">
-          Added on {new Date(resource.dateAdded).toLocaleDateString()}
+          Added on {new Date(resource.addedOn).toLocaleDateString()}
         </span>
       </div>
     </div>

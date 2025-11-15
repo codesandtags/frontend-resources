@@ -15,6 +15,18 @@ const categories: Category[] = [
   "State Management",
   "CSS",
   "TypeScript",
+  "Accessibility",
+  "Security",
+  "PWA",
+  "Animation",
+  "Data Visualization",
+  "3D & WebGL",
+  "Platforms & Hosting",
+  "Public APIs",
+  "Git",
+  "Design Resources",
+  "Utilities",
+  "Web VR",
 ];
 
 export function CategoryFilter({

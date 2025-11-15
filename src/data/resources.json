@@ -1,0 +1,2285 @@
+[
+  {
+    "id": "dive-into-html5",
+    "title": "Dive Into HTML5",
+    "url": "http://diveintohtml5.info/index.html",
+    "description": "Classic comprehensive guide to HTML5 features. Still valuable for understanding semantic HTML and modern web standards.",
+    "category": "Learning",
+    "tags": [
+      "html5",
+      "semantic",
+      "guide"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "responsive-images-guide",
+    "title": "Responsive Images Guide",
+    "url": "http://cloudinary.com/blog/automatically_art_directed_responsive_images",
+    "description": "Excellent article explaining responsive images with practical examples. Essential for modern web development.",
+    "category": "Learning",
+    "tags": [
+      "html5",
+      "responsive",
+      "images"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "mjml",
+    "title": "MJML",
+    "url": "https://mjml.io/",
+    "description": "Framework for creating responsive emails that work across all email clients. Saves hours of email debugging.",
+    "category": "Tool",
+    "tags": [
+      "email",
+      "html",
+      "responsive"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "html5-cheat-sheet",
+    "title": "HTML5 Cheat Sheet",
+    "url": "https://websitesetup.org/html5-cheat-sheet/",
+    "description": "Quick reference guide for HTML5 tags and attributes. Great for daily development.",
+    "category": "Learning",
+    "tags": [
+      "html5",
+      "reference",
+      "cheatsheet"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "a-complete-guide-to-flexbox",
+    "title": "A Complete Guide to Flexbox",
+    "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+    "description": "The definitive guide to Flexbox. Bookmark this - you",
+    "category": "CSS",
+    "tags": [
+      "css",
+      "flexbox",
+      "layout",
+      "guide"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "css-grid-course",
+    "title": "CSS Grid Course",
+    "url": "https://cssgrid.io/",
+    "description": "Free comprehensive course by Wes Bos. The best way to master CSS Grid.",
+    "category": "Learning",
+    "tags": [
+      "css",
+      "grid",
+      "course",
+      "tutorial"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "bem",
+    "title": "BEM",
+    "url": "http://getbem.com/introduction/",
+    "description": "Block Element Modifier methodology. The most popular CSS naming convention for maintainable stylesheets.",
+    "category": "CSS",
+    "tags": [
+      "css",
+      "methodology",
+      "naming",
+      "bem"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "smacss",
+    "title": "SMACSS",
+    "url": "https://smacss.com/",
+    "description": "Scalable and Modular Architecture for CSS. Essential reading for organizing large CSS codebases.",
+    "category": "CSS",
+    "tags": [
+      "css",
+      "architecture",
+      "scalable"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "atomic-design",
+    "title": "Atomic Design",
+    "url": "http://atomicdesign.bradfrost.com/",
+    "description": "Methodology for creating design systems. Changed how we think about component architecture.",
+    "category": "Learning",
+    "tags": [
+      "design",
+      "components",
+      "methodology"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "postcss",
+    "title": "PostCSS",
+    "url": "http://postcss.org/",
+    "description": "Transform CSS with JavaScript plugins. Powers modern CSS tooling (Autoprefixer, Tailwind, etc.).",
+    "category": "Tool",
+    "tags": [
+      "css",
+      "postcss",
+      "tooling"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "can-i-use",
+    "title": "Can I Use",
+    "url": "http://caniuse.com/",
+    "description": "Essential browser compatibility checker. Check feature support before using any CSS property.",
+    "category": "Tool",
+    "tags": [
+      "browser",
+      "compatibility",
+      "css",
+      "javascript"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "flexbox-froggy",
+    "title": "Flexbox Froggy",
+    "url": "http://flexboxfroggy.com/",
+    "description": "Interactive game to learn Flexbox. Makes learning fun and memorable.",
+    "category": "Learning",
+    "tags": [
+      "css",
+      "flexbox",
+      "game",
+      "interactive"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "css-tricks",
+    "title": "CSS Tricks",
+    "url": "https://css-tricks.com/",
+    "description": "The best CSS resource on the web. Articles, guides, and snippets for everything CSS.",
+    "category": "Learning",
+    "tags": [
+      "css",
+      "articles",
+      "tutorials"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "easings",
+    "title": "Easings",
+    "url": "https://easings.net/",
+    "description": "Visual reference for CSS easing functions. Perfect for smooth animations.",
+    "category": "CSS",
+    "tags": [
+      "css",
+      "animation",
+      "easing"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "cubic-bezier",
+    "title": "Cubic Bezier",
+    "url": "http://cubic-bezier.com/",
+    "description": "Interactive tool for creating custom cubic-bezier transitions. Essential for fine-tuning animations.",
+    "category": "Tool",
+    "tags": [
+      "css",
+      "animation",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "animate-css",
+    "title": "Animate.css",
+    "url": "https://animate.style/",
+    "description": "Popular CSS animation library. Great for quick prototypes and learning animation techniques.",
+    "category": "CSS",
+    "tags": [
+      "css",
+      "animation",
+      "library"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "coolors",
+    "title": "Coolors",
+    "url": "https://coolors.co/",
+    "description": "Best color palette generator. Press spacebar to generate beautiful color schemes.",
+    "category": "Design Resources",
+    "tags": [
+      "color",
+      "palette",
+      "design"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "brand-colors",
+    "title": "Brand Colors",
+    "url": "https://brandcolors.net/",
+    "description": "Collection of official brand color palettes. Useful for client work.",
+    "category": "Design Resources",
+    "tags": [
+      "color",
+      "brand",
+      "palette"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "css3-patterns-gallery",
+    "title": "CSS3 Patterns Gallery",
+    "url": "http://lea.verou.me/css3patterns/#",
+    "description": "Amazing collection of pure CSS background patterns. Great for inspiration.",
+    "category": "CSS",
+    "tags": [
+      "css",
+      "patterns",
+      "inspiration"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "dabblet",
+    "title": "Dabblet",
+    "url": "http://dabblet.com/",
+    "description": "Interactive CSS playground by Lea Verou. Perfect for quick experiments.",
+    "category": "Tool",
+    "tags": [
+      "css",
+      "playground",
+      "experiment"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "sassmeister",
+    "title": "SassMeister",
+    "url": "https://www.sassmeister.com/",
+    "description": "Online SASS/SCSS compiler. Great for testing Sass code snippets.",
+    "category": "Tool",
+    "tags": [
+      "sass",
+      "scss",
+      "compiler"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "understanding-em-and-rem",
+    "title": "Understanding EM and REM",
+    "url": "https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984",
+    "description": "Clear explanation of when to use em vs rem. Solves a common CSS confusion.",
+    "category": "Learning",
+    "tags": [
+      "css",
+      "units",
+      "tutorial"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "airbnb-css-style-guide",
+    "title": "Airbnb CSS Style Guide",
+    "url": "https://github.com/airbnb/css",
+    "description": "Well-documented CSS style guide from Airbnb. Great reference for best practices.",
+    "category": "CSS",
+    "tags": [
+      "css",
+      "style-guide",
+      "best-practices"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "style-guides",
+    "title": "Style Guides",
+    "url": "http://styleguides.io/",
+    "description": "Collection of style guide examples. Inspiration for creating your own.",
+    "category": "Learning",
+    "tags": [
+      "style-guide",
+      "design",
+      "inspiration"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "eloquent-javascript",
+    "title": "Eloquent JavaScript",
+    "url": "http://eloquentjavascript.net/",
+    "description": "The best free book for learning JavaScript. Updated regularly, covers modern ES6+ features.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "book",
+      "tutorial"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "javascript-the-good-parts",
+    "title": "JavaScript: The Good Parts",
+    "url": "http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf",
+    "description": "Classic book by Douglas Crockford. Still relevant for understanding JavaScript fundamentals.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "book",
+      "fundamentals"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "javascript-design-patterns",
+    "title": "JavaScript Design Patterns",
+    "url": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/index.html",
+    "description": "Free book on JavaScript design patterns. Essential for writing maintainable code.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "patterns",
+      "architecture"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "javascript-the-right-way",
+    "title": "JavaScript The Right Way",
+    "url": "http://jstherightway.org/",
+    "description": "Comprehensive guide to JavaScript best practices. Great reference for developers of all levels.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "best-practices",
+      "guide"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "javascript-event-loop",
+    "title": "JavaScript Event Loop",
+    "url": "http://latentflip.com/loupe/",
+    "description": "Visual tool to understand the event loop. Essential for understanding async JavaScript.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "event-loop",
+      "async",
+      "visual"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "javascript-module-systems",
+    "title": "JavaScript Module Systems",
+    "url": "https://auth0.com/blog/javascript-module-systems-showdown/",
+    "description": "Clear comparison of CommonJS, AMD, ES6 modules. Helps understand module evolution.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "modules",
+      "es6"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "airbnb-javascript-style-guide",
+    "title": "Airbnb JavaScript Style Guide",
+    "url": "https://github.com/airbnb/javascript",
+    "description": "Most popular JavaScript style guide. Great reference for code consistency.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "style-guide",
+      "best-practices"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "typescript-handbook",
+    "title": "TypeScript Handbook",
+    "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "description": "Official TypeScript documentation. The best place to learn TypeScript.",
+    "category": "TypeScript",
+    "tags": [
+      "typescript",
+      "documentation",
+      "tutorial"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "ast-explorer",
+    "title": "AST Explorer",
+    "url": "https://astexplorer.net/",
+    "description": "Interactive tool to explore JavaScript AST. Essential for understanding how code is parsed.",
+    "category": "Tool",
+    "tags": [
+      "javascript",
+      "ast",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "es6-compatibility-table",
+    "title": "ES6 Compatibility Table",
+    "url": "http://kangax.github.io/compat-table/es6/",
+    "description": "Check browser support for ES6+ features. Updated regularly.",
+    "category": "Tool",
+    "tags": [
+      "javascript",
+      "es6",
+      "compatibility"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "mdn-javascript-guide",
+    "title": "MDN JavaScript Guide",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "description": "The most reliable JavaScript reference. Always up-to-date and comprehensive.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "documentation",
+      "mdn"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "leetcode",
+    "title": "LeetCode",
+    "url": "https://leetcode.com/",
+    "description": "Best platform for coding interview preparation. Practice algorithms and data structures.",
+    "category": "Learning",
+    "tags": [
+      "algorithms",
+      "practice",
+      "interview"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "codewars",
+    "title": "CodeWars",
+    "url": "http://www.codewars.com/",
+    "description": "Fun way to practice JavaScript through coding challenges. Great for daily practice.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "practice",
+      "challenges"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "exercism",
+    "title": "Exercism",
+    "url": "http://exercism.io/",
+    "description": "Practice coding exercises with mentor feedback. Excellent for learning with community support.",
+    "category": "Learning",
+    "tags": [
+      "practice",
+      "exercises",
+      "mentorship"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "wcag-2-1-guidelines",
+    "title": "WCAG 2.1 Guidelines",
+    "url": "https://www.w3.org/WAI/WCAG21/quickref/",
+    "description": "Official accessibility guidelines. The standard for web accessibility.",
+    "category": "Accessibility",
+    "tags": [
+      "accessibility",
+      "a11y",
+      "standards"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "webaim",
+    "title": "WebAIM",
+    "url": "http://webaim.org/",
+    "description": "Leading resource for web accessibility. Articles, tools, and training materials.",
+    "category": "Accessibility",
+    "tags": [
+      "accessibility",
+      "a11y",
+      "resources"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "wave",
+    "title": "WAVE",
+    "url": "http://wave.webaim.org/",
+    "description": "Free browser extension to evaluate web accessibility. Essential tool for a11y testing.",
+    "category": "Accessibility",
+    "tags": [
+      "accessibility",
+      "testing",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "a11y-project",
+    "title": "A11y Project",
+    "url": "https://www.a11yproject.com/",
+    "description": "Community-driven accessibility resource. Checklists, patterns, and best practices.",
+    "category": "Accessibility",
+    "tags": [
+      "accessibility",
+      "a11y",
+      "community"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "wai-aria-authoring-practices",
+    "title": "WAI-ARIA Authoring Practices",
+    "url": "https://www.w3.org/TR/wai-aria-practices-1.1/",
+    "description": "Official guide to implementing ARIA. Essential for accessible components.",
+    "category": "Accessibility",
+    "tags": [
+      "accessibility",
+      "aria",
+      "w3c"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "accessibility-insights",
+    "title": "Accessibility Insights",
+    "url": "https://accessibilityinsights.io/",
+    "description": "Microsoft",
+    "category": "Accessibility",
+    "tags": [
+      "accessibility",
+      "testing",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "axe-devtools",
+    "title": "axe DevTools",
+    "url": "https://www.deque.com/axe/devtools/",
+    "description": "Most comprehensive accessibility testing browser extension. Used by major companies.",
+    "category": "Accessibility",
+    "tags": [
+      "accessibility",
+      "testing",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "web-dev-performance",
+    "title": "Web.dev Performance",
+    "url": "https://web.dev/performance/",
+    "description": "Google",
+    "category": "Performance",
+    "tags": [
+      "performance",
+      "optimization",
+      "google"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "webpagetest",
+    "title": "WebPageTest",
+    "url": "https://www.webpagetest.org/",
+    "description": "Free tool for detailed performance analysis. More detailed than PageSpeed Insights.",
+    "category": "Performance",
+    "tags": [
+      "performance",
+      "testing",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "lighthouse",
+    "title": "Lighthouse",
+    "url": "https://developers.google.com/web/tools/lighthouse/",
+    "description": "Built into Chrome DevTools. Automated performance, accessibility, and SEO audits.",
+    "category": "Performance",
+    "tags": [
+      "performance",
+      "audit",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "images-guide",
+    "title": "Images Guide",
+    "url": "https://images.guide/",
+    "description": "Comprehensive guide to image optimization. Essential for fast-loading sites.",
+    "category": "Performance",
+    "tags": [
+      "performance",
+      "images",
+      "optimization"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "bundle-phobia",
+    "title": "Bundle Phobia",
+    "url": "https://bundlephobia.com/",
+    "description": "Check npm package sizes before installing. Prevents bundle bloat.",
+    "category": "Performance",
+    "tags": [
+      "performance",
+      "bundles",
+      "npm"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "chrome-user-experience-report",
+    "title": "Chrome User Experience Report",
+    "url": "https://developers.google.com/web/tools/chrome-user-experience-report",
+    "description": "Real-world performance data. See how your site performs for real users.",
+    "category": "Performance",
+    "tags": [
+      "performance",
+      "metrics",
+      "google"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "owasp-top-10",
+    "title": "OWASP Top 10",
+    "url": "https://owasp.org/www-project-top-ten/",
+    "description": "The most critical web application security risks. Essential reading for all developers.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "owasp",
+      "best-practices"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "jwt-io",
+    "title": "JWT.io",
+    "url": "https://jwt.io/",
+    "description": "Debug and decode JWTs. Essential tool when working with authentication.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "jwt",
+      "authentication"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "web-security-academy",
+    "title": "Web Security Academy",
+    "url": "https://portswigger.net/web-security",
+    "description": "Free web security training by PortSwigger. Hands-on labs for learning security.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "learning",
+      "training"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "content-security-policy",
+    "title": "Content Security Policy",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+    "description": "Guide to implementing CSP headers. Critical for preventing XSS attacks.",
+    "category": "Security",
+    "tags": [
+      "security",
+      "csp",
+      "xss"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "pwa-documentation",
+    "title": "PWA Documentation",
+    "url": "https://web.dev/progressive-web-apps/",
+    "description": "Google",
+    "category": "PWA",
+    "tags": [
+      "pwa",
+      "progressive-web-apps",
+      "google"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "workbox",
+    "title": "Workbox",
+    "url": "https://developers.google.com/web/tools/workbox",
+    "description": "JavaScript libraries for adding offline support. The easiest way to implement service workers.",
+    "category": "PWA",
+    "tags": [
+      "pwa",
+      "service-workers",
+      "offline"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "web-app-manifest",
+    "title": "Web App Manifest",
+    "url": "https://web.dev/add-manifest/",
+    "description": "Guide to creating app manifests. Makes your site installable.",
+    "category": "PWA",
+    "tags": [
+      "pwa",
+      "manifest",
+      "installable"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "service-worker-cookbook",
+    "title": "Service Worker Cookbook",
+    "url": "https://serviceworke.rs/",
+    "description": "Collection of service worker recipes. Practical examples for common patterns.",
+    "category": "PWA",
+    "tags": [
+      "pwa",
+      "service-workers",
+      "recipes"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "react-documentation",
+    "title": "React Documentation",
+    "url": "https://react.dev/",
+    "description": "The new React docs are the best place to learn modern React. Interactive examples and clear explanations.",
+    "category": "Framework",
+    "tags": [
+      "react",
+      "documentation",
+      "framework"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "next-js",
+    "title": "Next.js",
+    "url": "https://nextjs.org/",
+    "description": "The React framework for production. Server-side rendering, static generation, and more out of the box.",
+    "category": "Framework",
+    "tags": [
+      "react",
+      "nextjs",
+      "ssr",
+      "framework"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "react-query-tanstack-query",
+    "title": "React Query (TanStack Query)",
+    "url": "https://tanstack.com/query",
+    "description": "The best data fetching library for React. Handles caching, synchronization, and updates automatically.",
+    "category": "State Management",
+    "tags": [
+      "react",
+      "data-fetching",
+      "cache"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "react-router",
+    "title": "React Router",
+    "url": "https://reactrouter.com/",
+    "description": "The standard routing library for React. Declarative and powerful.",
+    "category": "Framework",
+    "tags": [
+      "react",
+      "routing",
+      "navigation"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "redux-toolkit",
+    "title": "Redux Toolkit",
+    "url": "https://redux-toolkit.js.org/",
+    "description": "The official, opinionated way to write Redux. Much simpler than traditional Redux.",
+    "category": "State Management",
+    "tags": [
+      "react",
+      "redux",
+      "state-management"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "react-hook-form",
+    "title": "React Hook Form",
+    "url": "https://react-hook-form.com/",
+    "description": "Best form library for React. Minimal re-renders and great performance.",
+    "category": "Framework",
+    "tags": [
+      "react",
+      "forms",
+      "performance"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "react-developer-tools",
+    "title": "React Developer Tools",
+    "url": "https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi",
+    "description": "Essential Chrome extension for debugging React apps. Inspect component tree and state.",
+    "category": "Tool",
+    "tags": [
+      "react",
+      "debugging",
+      "devtools"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "usehooks",
+    "title": "useHooks",
+    "url": "https://usehooks.com/",
+    "description": "Collection of useful React hooks. Great for learning and reference.",
+    "category": "Learning",
+    "tags": [
+      "react",
+      "hooks",
+      "examples"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "angular-documentation",
+    "title": "Angular Documentation",
+    "url": "https://angular.io/",
+    "description": "Official Angular docs. Comprehensive guides and API reference.",
+    "category": "Framework",
+    "tags": [
+      "angular",
+      "documentation",
+      "framework"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "angular-material",
+    "title": "Angular Material",
+    "url": "https://material.angular.io/",
+    "description": "Material Design components for Angular. Production-ready UI components.",
+    "category": "UI Library",
+    "tags": [
+      "angular",
+      "material-design",
+      "components"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "angular-cli",
+    "title": "Angular CLI",
+    "url": "https://angular.io/cli",
+    "description": "Command-line tool for Angular. Generates code, runs tests, and builds apps.",
+    "category": "Tool",
+    "tags": [
+      "angular",
+      "cli",
+      "tooling"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "angular-university",
+    "title": "Angular University",
+    "url": "https://angular-university.io/",
+    "description": "High-quality Angular courses. Great for learning advanced patterns.",
+    "category": "Learning",
+    "tags": [
+      "angular",
+      "courses",
+      "learning"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "vue-js-documentation",
+    "title": "Vue.js Documentation",
+    "url": "https://vuejs.org/",
+    "description": "Excellent documentation. The progressive JavaScript framework that",
+    "category": "Framework",
+    "tags": [
+      "vue",
+      "framework",
+      "javascript"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "vue-school",
+    "title": "Vue School",
+    "url": "https://vueschool.io/",
+    "description": "Premium Vue.js courses. High-quality video tutorials.",
+    "category": "Learning",
+    "tags": [
+      "vue",
+      "courses",
+      "learning"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "nuxt-js",
+    "title": "Nuxt.js",
+    "url": "https://nuxt.com/",
+    "description": "The Vue.js framework for production. Similar to Next.js but for Vue.",
+    "category": "Framework",
+    "tags": [
+      "vue",
+      "nuxt",
+      "ssr",
+      "framework"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "svelte-documentation",
+    "title": "Svelte Documentation",
+    "url": "https://svelte.dev/",
+    "description": "Revolutionary framework that compiles to vanilla JS. No virtual DOM, smaller bundles.",
+    "category": "Framework",
+    "tags": [
+      "svelte",
+      "framework",
+      "compiler"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "sveltekit",
+    "title": "SvelteKit",
+    "url": "https://kit.svelte.dev/",
+    "description": "The official Svelte framework. Full-stack app framework with SSR.",
+    "category": "Framework",
+    "tags": [
+      "svelte",
+      "sveltekit",
+      "ssr"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "ember-js",
+    "title": "Ember.js",
+    "url": "https://emberjs.com/",
+    "description": "Framework for ambitious web applications. Great for large, long-lived applications.",
+    "category": "Framework",
+    "tags": [
+      "ember",
+      "framework",
+      "enterprise"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "web-components",
+    "title": "Web Components",
+    "url": "https://www.webcomponents.org/",
+    "description": "Standards-based component model.",
+    "category": "Framework",
+    "tags": [
+      "web-components",
+      "standards",
+      "components"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "custom-elements",
+    "title": "Custom Elements",
+    "url": "https://customelements.io/",
+    "description": "Components created by the community.",
+    "category": "Framework",
+    "tags": [
+      "web-components",
+      "custom-elements"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "single-spa",
+    "title": "Single-SPA",
+    "url": "https://single-spa.js.org/",
+    "description": "Framework for micro frontends.",
+    "category": "Framework",
+    "tags": [
+      "micro-frontends",
+      "architecture"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "micro-frontends-article",
+    "title": "Micro Frontends Article",
+    "url": "https://martinfowler.com/articles/micro-frontends.html",
+    "description": "Comprehensive guide to micro frontends.",
+    "category": "Learning",
+    "tags": [
+      "micro-frontends",
+      "architecture",
+      "article"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "vite",
+    "title": "Vite",
+    "url": "https://vitejs.dev/",
+    "description": "Next-generation frontend tooling. Lightning-fast HMR and optimized production builds.",
+    "category": "Tool",
+    "tags": [
+      "bundler",
+      "vite",
+      "tooling"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "webpack",
+    "title": "Webpack",
+    "url": "https://webpack.js.org/",
+    "description": "The most popular module bundler. Powerful but complex - use Vite for new projects.",
+    "category": "Tool",
+    "tags": [
+      "bundler",
+      "webpack",
+      "tooling"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "rollup",
+    "title": "Rollup",
+    "url": "https://rollupjs.org/",
+    "description": "Optimized for libraries. Produces smaller bundles than Webpack.",
+    "category": "Tool",
+    "tags": [
+      "bundler",
+      "rollup",
+      "libraries"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "parcel",
+    "title": "Parcel",
+    "url": "https://parceljs.org/",
+    "description": "Zero-configuration bundler. Great for quick prototypes.",
+    "category": "Tool",
+    "tags": [
+      "bundler",
+      "parcel",
+      "zero-config"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "turbopack",
+    "title": "Turbopack",
+    "url": "https://turbo.build/pack",
+    "description": "Next.js",
+    "category": "Tool",
+    "tags": [
+      "bundler",
+      "turbopack",
+      "nextjs"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "jest",
+    "title": "Jest",
+    "url": "https://jestjs.io/",
+    "description": "The most popular JavaScript testing framework. Zero-config, great for React.",
+    "category": "Testing",
+    "tags": [
+      "testing",
+      "jest",
+      "javascript"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "vitest",
+    "title": "Vitest",
+    "url": "https://vitest.dev/",
+    "description": "Fast unit test framework powered by Vite. Great alternative to Jest.",
+    "category": "Testing",
+    "tags": [
+      "testing",
+      "vitest",
+      "vite"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "testing-library",
+    "title": "Testing Library",
+    "url": "https://testing-library.com/",
+    "description": "Simple and complete testing utilities. Encourages testing like users interact.",
+    "category": "Testing",
+    "tags": [
+      "testing",
+      "dom",
+      "utilities"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "playwright",
+    "title": "Playwright",
+    "url": "https://playwright.dev/",
+    "description": "Modern end-to-end testing. Faster and more reliable than Cypress.",
+    "category": "Testing",
+    "tags": [
+      "testing",
+      "e2e",
+      "automation"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "cypress",
+    "title": "Cypress",
+    "url": "https://www.cypress.io/",
+    "description": "Popular E2E testing framework. Great developer experience with time-travel debugging.",
+    "category": "Testing",
+    "tags": [
+      "testing",
+      "e2e",
+      "cypress"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "storybook",
+    "title": "Storybook",
+    "url": "https://storybook.js.org/",
+    "description": "Tool for building UI components in isolation. Essential for component-driven development.",
+    "category": "Tool",
+    "tags": [
+      "components",
+      "development",
+      "storybook"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "eslint",
+    "title": "ESLint",
+    "url": "https://eslint.org/",
+    "description": "The standard JavaScript linter. Catches bugs and enforces code quality.",
+    "category": "Tool",
+    "tags": [
+      "linting",
+      "javascript",
+      "code-quality"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "prettier",
+    "title": "Prettier",
+    "url": "https://prettier.io/",
+    "description": "Opinionated code formatter. Stop arguing about code style.",
+    "category": "Tool",
+    "tags": [
+      "formatting",
+      "code-quality",
+      "prettier"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "stylelint",
+    "title": "Stylelint",
+    "url": "https://stylelint.io/",
+    "description": "Linter for CSS/SCSS. Catches errors and enforces consistent styles.",
+    "category": "Tool",
+    "tags": [
+      "linting",
+      "css",
+      "scss"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "typescript-eslint",
+    "title": "TypeScript ESLint",
+    "url": "https://typescript-eslint.io/",
+    "description": "ESLint rules for TypeScript. Essential for TS projects.",
+    "category": "Tool",
+    "tags": [
+      "linting",
+      "typescript",
+      "eslint"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "node-js-documentation",
+    "title": "Node.js Documentation",
+    "url": "https://nodejs.org/docs/",
+    "description": "Official Node.js docs. Comprehensive API reference and guides.",
+    "category": "Learning",
+    "tags": [
+      "nodejs",
+      "documentation",
+      "backend"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "nvm",
+    "title": "NVM",
+    "url": "https://github.com/nvm-sh/nvm",
+    "description": "Node Version Manager. Switch between Node versions easily.",
+    "category": "Tool",
+    "tags": [
+      "nodejs",
+      "version-manager",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "pm2",
+    "title": "PM2",
+    "url": "https://pm2.keymetrics.io/",
+    "description": "Production process manager for Node.js. Keeps apps running forever.",
+    "category": "Tool",
+    "tags": [
+      "nodejs",
+      "process-manager",
+      "production"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "nestjs",
+    "title": "NestJS",
+    "url": "https://nestjs.com/",
+    "description": "Progressive Node.js framework. Great for building scalable server-side applications.",
+    "category": "Framework",
+    "tags": [
+      "nodejs",
+      "framework",
+      "backend"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "sentry",
+    "title": "Sentry",
+    "url": "https://sentry.io/",
+    "description": "Error tracking and performance monitoring. The industry standard for error tracking.",
+    "category": "Tool",
+    "tags": [
+      "monitoring",
+      "errors",
+      "performance"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "logrocket",
+    "title": "LogRocket",
+    "url": "https://logrocket.com/",
+    "description": "Session replay and frontend monitoring. See exactly what users experience.",
+    "category": "Tool",
+    "tags": [
+      "monitoring",
+      "session-replay",
+      "analytics"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "datadog",
+    "title": "Datadog",
+    "url": "https://www.datadoghq.com/",
+    "description": "Application performance monitoring. Great for production monitoring.",
+    "category": "Tool",
+    "tags": [
+      "monitoring",
+      "apm",
+      "observability"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "gsap",
+    "title": "GSAP",
+    "url": "https://greensock.com/gsap/",
+    "description": "The most powerful JavaScript animation library. Industry standard for web animations.",
+    "category": "Animation",
+    "tags": [
+      "animation",
+      "javascript",
+      "gsap"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "framer-motion",
+    "title": "Framer Motion",
+    "url": "https://www.framer.com/motion/",
+    "description": "React animation library. Declarative and powerful.",
+    "category": "Animation",
+    "tags": [
+      "animation",
+      "react",
+      "framer"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "lottie",
+    "title": "Lottie",
+    "url": "https://airbnb.design/lottie/",
+    "description": "Render After Effects animations on the web. Perfect for complex animations.",
+    "category": "Animation",
+    "tags": [
+      "animation",
+      "after-effects",
+      "lottie"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "css-animations-guide",
+    "title": "CSS Animations Guide",
+    "url": "https://learn.shayhowe.com/advanced-html-css/transitions-animations/",
+    "description": "Comprehensive CSS animation tutorial. Great for learning fundamentals.",
+    "category": "Learning",
+    "tags": [
+      "css",
+      "animation",
+      "tutorial"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "d3-js",
+    "title": "D3.js",
+    "url": "https://d3js.org/",
+    "description": "The most powerful JavaScript library for data visualization. Steep learning curve but unmatched flexibility.",
+    "category": "Data Visualization",
+    "tags": [
+      "d3",
+      "visualization",
+      "charts"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "observable",
+    "title": "Observable",
+    "url": "https://observablehq.com/",
+    "description": "Interactive data visualization platform. Built by D3.js creator.",
+    "category": "Data Visualization",
+    "tags": [
+      "visualization",
+      "d3",
+      "notebooks"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "recharts",
+    "title": "Recharts",
+    "url": "https://recharts.org/",
+    "description": "Composable charting library for React. Built on D3, easier to use.",
+    "category": "Data Visualization",
+    "tags": [
+      "react",
+      "charts",
+      "visualization"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "chart-js",
+    "title": "Chart.js",
+    "url": "https://www.chartjs.org/",
+    "description": "Simple yet flexible charting library. Great for common chart types.",
+    "category": "Data Visualization",
+    "tags": [
+      "charts",
+      "visualization",
+      "canvas"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "victory",
+    "title": "Victory",
+    "url": "https://formidable.com/open-source/victory/",
+    "description": "React components for data visualization. Beautiful and accessible.",
+    "category": "Data Visualization",
+    "tags": [
+      "react",
+      "charts",
+      "visualization"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "three-js",
+    "title": "Three.js",
+    "url": "https://threejs.org/",
+    "description": "The most popular 3D library for the web. Great documentation and examples.",
+    "category": "3D & WebGL",
+    "tags": [
+      "3d",
+      "webgl",
+      "threejs"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "webgl-fundamentals",
+    "title": "WebGL Fundamentals",
+    "url": "https://webglfundamentals.org/",
+    "description": "Excellent WebGL tutorials. Start here to understand WebGL basics.",
+    "category": "Learning",
+    "tags": [
+      "webgl",
+      "3d",
+      "tutorial"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "react-three-fiber",
+    "title": "React Three Fiber",
+    "url": "https://docs.pmnd.rs/react-three-fiber/",
+    "description": "React renderer for Three.js. Makes 3D accessible to React developers.",
+    "category": "3D & WebGL",
+    "tags": [
+      "react",
+      "threejs",
+      "3d"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "babylon-js",
+    "title": "Babylon.js",
+    "url": "https://www.babylonjs.com/",
+    "description": "Powerful 3D engine. Great for games and complex 3D applications.",
+    "category": "3D & WebGL",
+    "tags": [
+      "3d",
+      "webgl",
+      "games"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "pixijs",
+    "title": "PixiJS",
+    "url": "https://pixijs.com/",
+    "description": "2D WebGL renderer. Perfect for 2D games and interactive graphics.",
+    "category": "3D & WebGL",
+    "tags": [
+      "2d",
+      "webgl",
+      "games"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "vercel",
+    "title": "Vercel",
+    "url": "https://vercel.com/",
+    "description": "The best platform for Next.js and React. Zero-config deployments, great DX.",
+    "category": "Platforms & Hosting",
+    "tags": [
+      "hosting",
+      "deployment",
+      "nextjs"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "netlify",
+    "title": "Netlify",
+    "url": "https://www.netlify.com/",
+    "description": "All-in-one platform for JAMstack. Great for static sites and serverless functions.",
+    "category": "Platforms & Hosting",
+    "tags": [
+      "hosting",
+      "jamstack",
+      "serverless"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "cloudflare-pages",
+    "title": "Cloudflare Pages",
+    "url": "https://pages.cloudflare.com/",
+    "description": "Free static site hosting. Fast global CDN included.",
+    "category": "Platforms & Hosting",
+    "tags": [
+      "hosting",
+      "cdn",
+      "static"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "github-pages",
+    "title": "GitHub Pages",
+    "url": "https://pages.github.com/",
+    "description": "Free static site hosting. Perfect for documentation and portfolios.",
+    "category": "Platforms & Hosting",
+    "tags": [
+      "hosting",
+      "github",
+      "static"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "railway",
+    "title": "Railway",
+    "url": "https://railway.app/",
+    "description": "Modern platform for deploying full-stack apps. Great developer experience.",
+    "category": "Platforms & Hosting",
+    "tags": [
+      "hosting",
+      "deployment",
+      "fullstack"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "public-apis",
+    "title": "Public APIs",
+    "url": "https://github.com/public-apis/public-apis",
+    "description": "Curated list of free APIs. The best resource for finding APIs.",
+    "category": "Public APIs",
+    "tags": [
+      "apis",
+      "rest",
+      "resources"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "jsonplaceholder",
+    "title": "JSONPlaceholder",
+    "url": "https://jsonplaceholder.typicode.com/",
+    "description": "Fake REST API for testing. Perfect for prototypes and demos.",
+    "category": "Public APIs",
+    "tags": [
+      "api",
+      "testing",
+      "mock"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "rest-countries",
+    "title": "REST Countries",
+    "url": "https://restcountries.com/",
+    "description": "Free API for country data. No authentication required.",
+    "category": "Public APIs",
+    "tags": [
+      "api",
+      "countries",
+      "data"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "the-cat-api",
+    "title": "The Cat API",
+    "url": "https://thecatapi.com/",
+    "description": "Fun API for cat images. Great for testing and demos.",
+    "category": "Public APIs",
+    "tags": [
+      "api",
+      "fun",
+      "testing"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "rxjs-documentation",
+    "title": "RxJS Documentation",
+    "url": "https://rxjs.dev/",
+    "description": "Official RxJS docs. Comprehensive guides and API reference.",
+    "category": "State Management",
+    "tags": [
+      "rxjs",
+      "reactive",
+      "observables"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "learn-rxjs",
+    "title": "Learn RxJS",
+    "url": "https://www.learnrxjs.io/",
+    "description": "Best resource for learning RxJS. Clear explanations and examples.",
+    "category": "Learning",
+    "tags": [
+      "rxjs",
+      "learning",
+      "tutorial"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "ngrx",
+    "title": "NgRx",
+    "url": "https://ngrx.io/",
+    "description": "Reactive state management for Angular. Inspired by Redux but built for Angular.",
+    "category": "State Management",
+    "tags": [
+      "angular",
+      "rxjs",
+      "state-management"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "regex101",
+    "title": "Regex101",
+    "url": "https://regex101.com/",
+    "description": "Online regex tester and debugger. Essential tool for writing regex.",
+    "category": "Utilities",
+    "tags": [
+      "regex",
+      "tool",
+      "testing"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "regular-expressions-info",
+    "title": "Regular Expressions Info",
+    "url": "https://www.regular-expressions.info/",
+    "description": "Comprehensive regex tutorial. The best resource for learning regex.",
+    "category": "Learning",
+    "tags": [
+      "regex",
+      "tutorial",
+      "learning"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "babel",
+    "title": "Babel",
+    "url": "https://babeljs.io/",
+    "description": "The JavaScript compiler. Transpiles modern JS to compatible versions.",
+    "category": "Tool",
+    "tags": [
+      "babel",
+      "transpiler",
+      "compiler"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "swc",
+    "title": "SWC",
+    "url": "https://swc.rs/",
+    "description": "Super-fast TypeScript/JavaScript compiler written in Rust. Used by Next.js.",
+    "category": "Tool",
+    "tags": [
+      "swc",
+      "compiler",
+      "rust"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "typescript",
+    "title": "TypeScript",
+    "url": "https://www.typescriptlang.org/",
+    "description": "Typed superset of JavaScript. Adds type safety and better tooling.",
+    "category": "TypeScript",
+    "tags": [
+      "typescript",
+      "language",
+      "types"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "material-design",
+    "title": "Material Design",
+    "url": "https://m3.material.io/",
+    "description": "Google",
+    "category": "UI Library",
+    "tags": [
+      "design-system",
+      "material",
+      "google"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "ant-design",
+    "title": "Ant Design",
+    "url": "https://ant.design/",
+    "description": "Enterprise-class UI design language. Beautiful React components.",
+    "category": "UI Library",
+    "tags": [
+      "react",
+      "components",
+      "enterprise"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "chakra-ui",
+    "title": "Chakra UI",
+    "url": "https://chakra-ui.com/",
+    "description": "Simple, modular React component library. Great developer experience.",
+    "category": "UI Library",
+    "tags": [
+      "react",
+      "components",
+      "chakra"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "radix-ui",
+    "title": "Radix UI",
+    "url": "https://www.radix-ui.com/",
+    "description": "Unstyled, accessible component primitives. Build your own design system.",
+    "category": "UI Library",
+    "tags": [
+      "react",
+      "components",
+      "accessibility"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "mantine",
+    "title": "Mantine",
+    "url": "https://mantine.dev/",
+    "description": "Full-featured React components library. Great defaults and customization.",
+    "category": "UI Library",
+    "tags": [
+      "react",
+      "components",
+      "mantine"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "design-systems-repo",
+    "title": "Design Systems Repo",
+    "url": "https://designsystemsrepo.com/",
+    "description": "Curated list of design systems. Great for inspiration.",
+    "category": "Learning",
+    "tags": [
+      "design-systems",
+      "inspiration",
+      "ui"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "ui-movement",
+    "title": "UI Movement",
+    "url": "https://uimovement.com/",
+    "description": "Curated UI animations and interactions. Daily inspiration.",
+    "category": "Learning",
+    "tags": [
+      "ui",
+      "animations",
+      "inspiration"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "npm-trends",
+    "title": "npm trends",
+    "url": "https://npmtrends.com/",
+    "description": "Compare npm package download trends. See what",
+    "category": "Tool",
+    "tags": [
+      "npm",
+      "trends",
+      "packages"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "devdocs",
+    "title": "DevDocs",
+    "url": "https://devdocs.io/",
+    "description": "Offline documentation aggregator. All your docs in one place.",
+    "category": "Tool",
+    "tags": [
+      "documentation",
+      "offline",
+      "reference"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "graphql-playground",
+    "title": "GraphQL Playground",
+    "url": "https://www.graphql-yoga.com/",
+    "description": "Interactive GraphQL IDE. Test queries and explore schemas.",
+    "category": "Tool",
+    "tags": [
+      "graphql",
+      "ide",
+      "testing"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "localtunnel",
+    "title": "LocalTunnel",
+    "url": "https://localtunnel.github.io/www/",
+    "description": "Expose localhost to the internet. Great for testing webhooks.",
+    "category": "Tool",
+    "tags": [
+      "tunnel",
+      "localhost",
+      "testing"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "ngrok",
+    "title": "ngrok",
+    "url": "https://ngrok.com/",
+    "description": "Secure tunnels to localhost. More reliable than LocalTunnel.",
+    "category": "Tool",
+    "tags": [
+      "tunnel",
+      "localhost",
+      "security"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "yarn",
+    "title": "Yarn",
+    "url": "https://yarnpkg.com/",
+    "description": "Fast, reliable package manager. Alternative to npm.",
+    "category": "Tool",
+    "tags": [
+      "package-manager",
+      "yarn",
+      "npm"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "pnpm",
+    "title": "pnpm",
+    "url": "https://pnpm.io/",
+    "description": "Fast, disk space efficient package manager. Uses symlinks to save space.",
+    "category": "Tool",
+    "tags": [
+      "package-manager",
+      "pnpm",
+      "efficient"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "npms",
+    "title": "npms",
+    "url": "https://npms.io/",
+    "description": "Better npm search. Finds packages by quality, not just popularity.",
+    "category": "Tool",
+    "tags": [
+      "npm",
+      "search",
+      "packages"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "typescript-playground",
+    "title": "TypeScript Playground",
+    "url": "https://www.typescriptlang.org/play",
+    "description": "Online TypeScript editor. Test TS code instantly.",
+    "category": "Tool",
+    "tags": [
+      "typescript",
+      "playground",
+      "editor"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "codesandbox",
+    "title": "CodeSandbox",
+    "url": "https://codesandbox.io/",
+    "description": "Online IDE for React, Vue, and more. Share code instantly.",
+    "category": "Tool",
+    "tags": [
+      "ide",
+      "online",
+      "react",
+      "vue"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "stackblitz",
+    "title": "StackBlitz",
+    "url": "https://stackblitz.com/",
+    "description": "Online IDE powered by WebContainers. Runs Node.js in the browser.",
+    "category": "Tool",
+    "tags": [
+      "ide",
+      "online",
+      "nodejs"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "pro-git-book",
+    "title": "Pro Git Book",
+    "url": "https://git-scm.com/book",
+    "description": "The official Git book. Free and comprehensive.",
+    "category": "Git",
+    "tags": [
+      "git",
+      "book",
+      "learning"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "oh-my-git",
+    "title": "Oh My Git!",
+    "url": "https://ohmygit.org/",
+    "description": "Interactive game to learn Git. Makes learning fun.",
+    "category": "Git",
+    "tags": [
+      "git",
+      "game",
+      "learning"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "github-learning-lab",
+    "title": "GitHub Learning Lab",
+    "url": "https://lab.github.com/",
+    "description": "Interactive Git and GitHub tutorials. Learn by doing.",
+    "category": "Git",
+    "tags": [
+      "git",
+      "github",
+      "tutorials"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "conventional-commits",
+    "title": "Conventional Commits",
+    "url": "https://www.conventionalcommits.org/",
+    "description": "Specification for commit messages. Makes history readable.",
+    "category": "Git",
+    "tags": [
+      "git",
+      "commits",
+      "best-practices"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "unsplash",
+    "title": "Unsplash",
+    "url": "https://unsplash.com/",
+    "description": "High-quality free stock photos. The best free photo resource.",
+    "category": "Design Resources",
+    "tags": [
+      "photos",
+      "stock",
+      "free"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "pexels",
+    "title": "Pexels",
+    "url": "https://www.pexels.com/",
+    "description": "Free stock photos and videos. Great alternative to Unsplash.",
+    "category": "Design Resources",
+    "tags": [
+      "photos",
+      "videos",
+      "stock"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "heroicons",
+    "title": "Heroicons",
+    "url": "https://heroicons.com/",
+    "description": "Beautiful hand-crafted SVG icons. Made by Tailwind CSS team.",
+    "category": "Design Resources",
+    "tags": [
+      "icons",
+      "svg",
+      "tailwind"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "lucide",
+    "title": "Lucide",
+    "url": "https://lucide.dev/",
+    "description": "Beautiful icon library. Fork of Feather icons with more icons.",
+    "category": "Design Resources",
+    "tags": [
+      "icons",
+      "svg",
+      "library"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "font-awesome",
+    "title": "Font Awesome",
+    "url": "https://fontawesome.com/",
+    "description": "Popular icon font library. Free and paid tiers available.",
+    "category": "Design Resources",
+    "tags": [
+      "icons",
+      "font",
+      "library"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "json-formatter",
+    "title": "JSON Formatter",
+    "url": "https://jsonformatter.org/",
+    "description": "Format and validate JSON. Essential for API development.",
+    "category": "Utilities",
+    "tags": [
+      "json",
+      "formatter",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "transform-tools",
+    "title": "Transform Tools",
+    "url": "https://transform.tools/",
+    "description": "Convert between formats (JSON, YAML, TypeScript, etc.). Incredibly useful.",
+    "category": "Utilities",
+    "tags": [
+      "converter",
+      "transform",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "shields-io",
+    "title": "Shields.io",
+    "url": "https://shields.io/",
+    "description": "Badges for GitHub projects. Add status badges to your README.",
+    "category": "Utilities",
+    "tags": [
+      "badges",
+      "github",
+      "readme"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "carbon",
+    "title": "Carbon",
+    "url": "https://carbon.now.sh/",
+    "description": "Create beautiful code screenshots. Perfect for blog posts and documentation.",
+    "category": "Utilities",
+    "tags": [
+      "screenshots",
+      "code",
+      "tool"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "freecodecamp",
+    "title": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/",
+    "description": "Free coding bootcamp. Comprehensive curriculum with certifications.",
+    "category": "Learning",
+    "tags": [
+      "learning",
+      "bootcamp",
+      "free"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "frontend-masters",
+    "title": "Frontend Masters",
+    "url": "https://frontendmasters.com/",
+    "description": "Premium video courses from industry experts. Best paid resource.",
+    "category": "Learning",
+    "tags": [
+      "courses",
+      "premium",
+      "video"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "javascript-info",
+    "title": "JavaScript.info",
+    "url": "https://javascript.info/",
+    "description": "Modern JavaScript tutorial. Covers ES6+ and modern practices.",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "tutorial",
+      "modern"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "state-of-js",
+    "title": "State of JS",
+    "url": "https://stateofjs.com/",
+    "description": "Annual survey of JavaScript ecosystem. See what",
+    "category": "Learning",
+    "tags": [
+      "javascript",
+      "survey",
+      "trends"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "state-of-css",
+    "title": "State of CSS",
+    "url": "https://stateofcss.com/",
+    "description": "Annual CSS survey. Learn what CSS features developers use.",
+    "category": "Learning",
+    "tags": [
+      "css",
+      "survey",
+      "trends"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "frontend-interview-handbook",
+    "title": "Frontend Interview Handbook",
+    "url": "https://github.com/yangshun/front-end-interview-handbook",
+    "description": "Comprehensive frontend interview guide. Great for job preparation.",
+    "category": "Learning",
+    "tags": [
+      "interview",
+      "preparation",
+      "guide"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "web-dev",
+    "title": "Web.dev",
+    "url": "https://web.dev/",
+    "description": "Google",
+    "category": "Learning",
+    "tags": [
+      "web-dev",
+      "google",
+      "guides"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "mdn-web-docs",
+    "title": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/",
+    "description": "The most reliable web documentation. Always accurate and up-to-date.",
+    "category": "Learning",
+    "tags": [
+      "documentation",
+      "mdn",
+      "reference"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "a-frame",
+    "title": "A-Frame",
+    "url": "https://aframe.io/",
+    "description": "Framework for building VR experiences. Works with WebXR and WebVR.",
+    "category": "Web VR",
+    "tags": [
+      "vr",
+      "webxr",
+      "framework"
+    ],
+    "addedOn": "2024-01-01"
+  },
+  {
+    "id": "webxr-device-api",
+    "title": "WebXR Device API",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+    "description": "Official WebXR documentation. The future of web VR/AR.",
+    "category": "Web VR",
+    "tags": [
+      "webxr",
+      "vr",
+      "ar",
+      "mdn"
+    ],
+    "addedOn": "2024-01-01"
+  }
+]

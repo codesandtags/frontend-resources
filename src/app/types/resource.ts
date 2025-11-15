@@ -1,13 +1,9 @@
-export interface Resource {
-  id: string;
-  title: string;
-  description: string;
-  url: string;
+import { Resource as BaseResource } from "../../lib/resources";
+
+export interface Resource extends BaseResource {
   category: Category;
-  tags: string[];
-  likes: number;
-  dateAdded: string;
-  iconName: string;
+  // Computed fields for display
+  likes?: number;
 }
 
 export type Category =
@@ -19,4 +15,16 @@ export type Category =
   | "Testing"
   | "State Management"
   | "CSS"
-  | "TypeScript";
+  | "TypeScript"
+  | "Accessibility"
+  | "Security"
+  | "PWA"
+  | "Animation"
+  | "Data Visualization"
+  | "3D & WebGL"
+  | "Platforms & Hosting"
+  | "Public APIs"
+  | "Git"
+  | "Design Resources"
+  | "Utilities"
+  | "Web VR";
