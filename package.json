@@ -10,7 +10,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "generate:readme": "ts-node --esm src/lib/generator.ts"
+    "generate:readme": "tsx src/lib/generator.ts"
   },
   "description": "A curated list of awesome useful resources for Front-End",
   "dependencies": {
