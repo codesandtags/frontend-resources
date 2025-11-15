@@ -60,7 +60,6 @@
 
 ### HTML5
 
-- [HTML5 Cheat Sheet](https://websitesetup.org/html5-cheat-sheet/) - Quick reference guide for HTML5 tags and attributes. Great for daily development.
 - [Responsive Images Guide](http://cloudinary.com/blog/automatically_art_directed_responsive_images) - Excellent article explaining responsive images with practical examples. Essential for modern web development.
 
 ### CSS3 & SCSS
@@ -87,8 +86,6 @@
 - [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/index.html) - Free book on JavaScript design patterns. Essential for writing maintainable code.
 - [JavaScript Event Loop](http://latentflip.com/loupe/) - Visual tool to understand the event loop. Essential for understanding async JavaScript.
 - [JavaScript Module Systems](https://auth0.com/blog/javascript-module-systems-showdown/) - Clear comparison of CommonJS, AMD, ES6 modules. Helps understand module evolution.
-- [JavaScript The Right Way](http://jstherightway.org/) - Comprehensive guide to JavaScript best practices. Great reference for developers of all levels.
-- [JavaScript: The Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) - Classic book by Douglas Crockford. Still relevant for understanding JavaScript fundamentals.
 - [JavaScript.info](https://javascript.info/) - Modern JavaScript tutorial. Covers ES6+ and modern practices.
 - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) - The most reliable JavaScript reference. Always up-to-date and comprehensive.
 - [RxJS Documentation](https://rxjs.dev/) - Official RxJS docs. Comprehensive guides and API reference.

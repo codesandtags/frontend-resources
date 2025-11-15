@@ -10,7 +10,12 @@ interface ResourceCardProps {
 
 export function ResourceCard({ resource, onLike }: ResourceCardProps) {
   return (
-    <div className="relative bg-gray-800 rounded-xl border border-gray-700 p-6 transition-all hover:border-gray-600 hover:shadow-lg hover:shadow-black/20">
+    <div
+      className={`
+        relative bg-gray-800 rounded-xl border p-6 transition-all hover:shadow-lg hover:shadow-black/20
+        ${resource.isFeatured ? 'border-yellow-500 hover:border-yellow-400' : 'border-transparent'}
+      `}
+    >
       {/* Like button in top-right corner */}
       <button
         onClick={() => onLike(resource.id)}

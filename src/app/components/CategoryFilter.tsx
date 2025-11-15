@@ -38,7 +38,7 @@ export function CategoryFilter({
   onSelect,
 }: CategoryFilterProps) {
   return (
-    <div className="flex overflow-x-auto gap-2 scrollbar-hide pb-2">
+    <div className="flex flex-nowrap overflow-x-auto gap-2 scrollbar-hide pb-2">
       <button
         onClick={() => onSelect(null)}
         className={`px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap flex-shrink-0
