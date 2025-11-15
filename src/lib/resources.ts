@@ -8,6 +8,7 @@ export interface Resource {
   category: string; // Will be validated/cast to Category type in app layer
   tags: string[];
   addedOn: string;
+  isFeatured?: boolean;
 }
 
 /**
@@ -74,4 +75,3 @@ export function searchResources(query: string): Resource[] {
       resource.tags.some((tag) => tag.toLowerCase().includes(lowerQuery))
   );
 }
-

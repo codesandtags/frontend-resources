@@ -27,6 +27,25 @@ Each resource should follow this format:
 - [React](https://react.dev/) - A JavaScript library for building user interfaces.
 ```
 
+### JSON Format (for direct edits to `src/data/resources.json`)
+
+If you're editing the JSON file directly, each resource should follow this structure:
+
+```json
+{
+  "id": "resource-id",
+  "title": "Resource Name",
+  "url": "https://example.com",
+  "description": "A brief one-sentence description of what the resource is and why it's useful.",
+  "category": "Framework",
+  "tags": ["tag1", "tag2"],
+  "addedOn": "2024-01-01",
+  "isFeatured": false
+}
+```
+
+**Note:** The `isFeatured` field should be set to `false` for new resources. Only maintainers will set this to `true` for curated featured resources.
+
 ## Criteria for Inclusion
 
 We only accept resources that meet the following criteria:
@@ -78,6 +97,7 @@ Please add resources to the most appropriate category. If you're unsure, add it 
 ## Questions?
 
 If you have questions about contributing, please:
+
 - Open an issue for discussion
 - Check existing issues for similar questions
 - Review the README for category descriptions
@@ -87,4 +107,3 @@ If you have questions about contributing, please:
 Please note that this project follows a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 Thank you for helping make this resource list awesome! 🚀
-

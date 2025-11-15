@@ -6,17 +6,22 @@ interface CategoryFilterProps {
 }
 
 const categories: Category[] = [
-  "Framework",
-  "UI Library",
-  "Tool",
-  "Learning",
-  "Performance",
-  "Testing",
-  "State Management",
+  // 1. Fundamentals
   "CSS",
   "TypeScript",
+  // 2. Frameworks & Ecosystem
+  "Framework",
+  "UI Library",
+  "State Management",
+  // 3. Core Concepts
   "Accessibility",
+  "Performance",
+  "Testing",
   "Security",
+  // 4. Tools & Types
+  "Tool",
+  "Learning",
+  "Design Resources",
   "PWA",
   "Animation",
   "Data Visualization",
@@ -24,7 +29,6 @@ const categories: Category[] = [
   "Platforms & Hosting",
   "Public APIs",
   "Git",
-  "Design Resources",
   "Utilities",
   "Web VR",
 ];
@@ -34,7 +38,7 @@ export function CategoryFilter({
   onSelect,
 }: CategoryFilterProps) {
   return (
-    <div className="flex overflow-x-auto gap-2 scrollbar-hide pb-2">
+    <div className="flex flex-nowrap overflow-x-auto gap-2 scrollbar-hide pb-2">
       <button
         onClick={() => onSelect(null)}
         className={`px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap flex-shrink-0

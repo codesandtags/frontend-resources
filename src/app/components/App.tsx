@@ -38,7 +38,7 @@ function App() {
   const resources = useMemo(() => getResources(), []);
 
   const filteredResources = useMemo(() => {
-    return resources.filter((resource) => {
+    const filtered = resources.filter((resource) => {
       const matchesSearch =
         resource.title.toLowerCase().includes(search.toLowerCase()) ||
         resource.description.toLowerCase().includes(search.toLowerCase()) ||
@@ -50,6 +50,16 @@ function App() {
         !selectedCategory || resource.category === selectedCategory;
 
       return matchesSearch && matchesCategory;
+    });
+
+    // Sort by isFeatured first, then by date (newest first)
+    return filtered.sort((a, b) => {
+      // 1. Sort by isFeatured (true comes first)
+      if (a.isFeatured && !b.isFeatured) return -1;
+      if (!a.isFeatured && b.isFeatured) return 1;
+
+      // 2. If both are featured or not featured, sort by date (newest first)
+      return new Date(b.addedOn).getTime() - new Date(a.addedOn).getTime();
     });
   }, [resources, search, selectedCategory]);
 
