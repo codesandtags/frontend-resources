@@ -83,7 +83,7 @@ function App() {
                 width={32}
                 height={32}
               />
-              <span className="text-lg font-semibold text-white">
+              <span className="text-sm sm:text-lg font-semibold text-white leading-tight">
                 Frontend Resources
               </span>
               <span className="border rounded-md px-2 text-xs text-slate-500 border-slate-500">
