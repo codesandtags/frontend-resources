@@ -60,7 +60,6 @@
 
 ### HTML5
 
-- [Dive Into HTML5](http://diveintohtml5.info/index.html) - Classic comprehensive guide to HTML5 features. Still valuable for understanding semantic HTML and modern web standards.
 - [HTML5 Cheat Sheet](https://websitesetup.org/html5-cheat-sheet/) - Quick reference guide for HTML5 tags and attributes. Great for daily development.
 - [Responsive Images Guide](http://cloudinary.com/blog/automatically_art_directed_responsive_images) - Excellent article explaining responsive images with practical examples. Essential for modern web development.
 

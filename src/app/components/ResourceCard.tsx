@@ -10,8 +10,17 @@ interface ResourceCardProps {
 
 export function ResourceCard({ resource, onLike }: ResourceCardProps) {
   return (
-    <div className="bg-gray-800 rounded-xl border border-gray-700 p-6 transition-all hover:border-gray-600 hover:shadow-lg hover:shadow-black/20">
-      <div className="flex justify-between items-start mb-4">
+    <div className="relative bg-gray-800 rounded-xl border border-gray-700 p-6 transition-all hover:border-gray-600 hover:shadow-lg hover:shadow-black/20">
+      {/* Like button in top-right corner */}
+      <button
+        onClick={() => onLike(resource.id)}
+        className="absolute top-4 right-4 flex items-center gap-1 bg-gray-800 rounded px-3 py-1.5 text-gray-400 hover:text-pink-400 hover:bg-gray-700 transition-colors z-10"
+      >
+        <Heart className="h-4 w-4" />
+        <span className="text-sm">{resource.likes || 0}</span>
+      </button>
+
+      <div className="flex justify-between items-start mb-4 pr-20">
         <div className="flex items-start gap-3">
           <div className="text-blue-400">
             <TechIcon category={resource.category} />
@@ -29,7 +38,7 @@ export function ResourceCard({ resource, onLike }: ResourceCardProps) {
           href={resource.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-blue-400 transition-colors"
+          className="text-gray-400 hover:text-blue-400 transition-colors mt-1"
         >
           <ExternalLink className="h-5 w-5" />
         </a>
@@ -37,23 +46,10 @@ export function ResourceCard({ resource, onLike }: ResourceCardProps) {
 
       <p className="text-gray-300 mb-4">{resource.description}</p>
 
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2">
         {resource.tags.map((tag) => (
           <Tag key={tag} label={tag} />
         ))}
-      </div>
-
-      <div className="flex justify-between items-center text-sm">
-        <button
-          onClick={() => onLike(resource.id)}
-          className="flex items-center gap-1 text-gray-400 hover:text-pink-400 transition-colors"
-        >
-          <Heart className="h-4 w-4" />
-          <span>{resource.likes || 0}</span>
-        </button>
-        <span className="text-gray-500">
-          Added on {new Date(resource.addedOn).toLocaleDateString()}
-        </span>
       </div>
     </div>
   );
