@@ -1,0 +1,55 @@
+name: Check README Sync
+
+on:
+  pull_request:
+    paths:
+      - "src/data/resources.json"
+      - "src/lib/generator.ts"
+      - "src/lib/layout.json"
+      - "README.template.md"
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "src/data/resources.json"
+      - "src/lib/generator.ts"
+      - "src/lib/layout.json"
+      - "README.template.md"
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate README.md
+        run: |
+          npm run generate:readme
+
+      - name: Check if README.md is in sync
+        run: |
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            echo "❌ README.md is out of sync with resources.json"
+            echo ""
+            echo "Please run the following command to update README.md:"
+            echo "  npm run generate:readme"
+            echo ""
+            echo "Then commit the updated README.md file."
+            git diff README.md
+            exit 1
+          else
+            echo "✅ README.md is up to date"
+          fi

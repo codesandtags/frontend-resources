@@ -1,0 +1,51 @@
+[
+  {
+    "group": "Start Broad",
+    "sections": ["HTML5", "CSS3 & SCSS", "JavaScript / TypeScript"]
+  },
+  {
+    "group": "Core Concepts",
+    "sections": [
+      "Accessibility (A11Y)",
+      "Performance",
+      "Security",
+      "Progressive Web Apps (PWA)"
+    ]
+  },
+  {
+    "group": "Frameworks & Libraries",
+    "sections": [
+      "React Ecosystem",
+      "Angular",
+      "Vue.js",
+      "Svelte",
+      "Ember.js",
+      "Web Components",
+      "Micro Front-End"
+    ]
+  },
+  {
+    "group": "Tooling",
+    "sections": [
+      "Build Tools & Bundlers",
+      "Transpiling & Compiling",
+      "Testing",
+      "Linting & Formatting",
+      "Development Tools",
+      "Git"
+    ]
+  },
+  {
+    "group": "Beyond the Code",
+    "sections": [
+      "Design Systems & UI/UX",
+      "Animation",
+      "Data Visualization",
+      "3D & WebGL",
+      "Web VR / Virtual Reality",
+      "Platforms & Hosting",
+      "Learning Resources",
+      "Public APIs"
+    ]
+  }
+]
