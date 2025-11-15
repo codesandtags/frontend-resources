@@ -213,7 +213,6 @@
 - [Dabblet](http://dabblet.com/) - Interactive CSS playground by Lea Verou. Perfect for quick experiments.
 - [Datadog](https://www.datadoghq.com/) - Application performance monitoring. Great for production monitoring.
 - [DevDocs](https://devdocs.io/) - Offline documentation aggregator. All your docs in one place.
-- [ES6 Compatibility Table](http://kangax.github.io/compat-table/es6/) - Check browser support for ES6+ features. Updated regularly.
 - [GraphQL Playground](https://www.graphql-yoga.com/) - Interactive GraphQL IDE. Test queries and explore schemas.
 - [JSON Formatter](https://jsonformatter.org/) - Format and validate JSON. Essential for API development.
 - [LocalTunnel](https://localtunnel.github.io/www/) - Expose localhost to the internet. Great for testing webhooks.
