@@ -46,7 +46,7 @@ function App() {
 
       if (!session) {
         // Sign in anonymously
-        const { data: authData, error: authError } = await supabase.auth.signInAnonymously();
+        const { error: authError } = await supabase.auth.signInAnonymously();
         if (authError) {
           console.error("Error signing in anonymously:", authError);
           // If anonymous auth is not enabled, this will fail
