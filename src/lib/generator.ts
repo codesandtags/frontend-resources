@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import { fileURLToPath } from "url";
 import type { Resource } from "./resources";
 
 // Read layout configuration from JSON file
@@ -335,6 +336,6 @@ export function generateREADME(): void {
 }
 
 // Run if called directly
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (fileURLToPath(import.meta.url) === process.argv[1]) {
   generateREADME();
 }

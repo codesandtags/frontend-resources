@@ -37,7 +37,7 @@ jobs:
 
       - name: Generate README.md
         run: |
-          npx tsx src/lib/generator.ts
+          npm run generate:readme
 
       - name: Check if README.md is in sync
         run: |
