@@ -10,10 +10,12 @@ import { supabase } from "../../lib/supabase";
 import Image from "next/image";
 
 function App() {
-  const [search, setSearch] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState('featured'); // default sort
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(
     null
   );
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [likeCounts, setLikeCounts] = useState<Map<string, number>>(new Map());
   const [userLikes, setUserLikes] = useState<Set<string>>(new Set());
   const [githubStars, setGithubStars] = useState<number | null>(null);
@@ -90,31 +92,51 @@ function App() {
 
   const resources = useMemo(() => getResources(), []);
 
+  // 1. Create a memoized list that filters by CATEGORY and SEARCH
   const filteredResources = useMemo(() => {
-    const filtered = resources.filter((resource) => {
-      const matchesSearch =
-        resource.title.toLowerCase().includes(search.toLowerCase()) ||
-        resource.description.toLowerCase().includes(search.toLowerCase()) ||
-        resource.tags.some((tag: string) =>
-          tag.toLowerCase().includes(search.toLowerCase())
-        );
+    const lowerCaseQuery = searchQuery.toLowerCase();
+    return (
+      resources
+        // First, filter by the active category
+        .filter((resource) => {
+          if (!selectedCategory) return true;
+          return resource.category.toLowerCase() === selectedCategory.toLowerCase();
+        })
+        // Next, filter by the search query
+        .filter((resource) => {
+          if (lowerCaseQuery === '') return true;
+          return (
+            resource.title.toLowerCase().includes(lowerCaseQuery) ||
+            resource.description.toLowerCase().includes(lowerCaseQuery) ||
+            resource.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery))
+          );
+        })
+    );
+  }, [resources, selectedCategory, searchQuery]);
 
-      const matchesCategory =
-        !selectedCategory || resource.category === selectedCategory;
+  // 2. Create a memoized list that SORTS the filtered results
+  const sortedResources = useMemo(() => {
+    // Make a copy to avoid mutating the memoized 'filteredResources'
+    return [...filteredResources].sort((a, b) => {
+      switch (sortBy) {
+        case 'popular':
+          // Sort by 'like_count' descending
+          return (likeCounts.get(b.id) || 0) - (likeCounts.get(a.id) || 0);
 
-      return matchesSearch && matchesCategory;
+        case 'newest':
+          // Sort by 'addedOn' date descending
+          return new Date(b.addedOn).getTime() - new Date(a.addedOn).getTime();
+
+        case 'featured':
+        default:
+          // This is the logic we had before
+          if (a.isFeatured && !b.isFeatured) return -1;
+          if (!a.isFeatured && b.isFeatured) return 1;
+          // As a fallback, sort featured items by newest
+          return new Date(b.addedOn).getTime() - new Date(a.addedOn).getTime();
+      }
     });
-
-    // Sort by isFeatured first, then by date (newest first)
-    return filtered.sort((a, b) => {
-      // 1. Sort by isFeatured (true comes first)
-      if (a.isFeatured && !b.isFeatured) return -1;
-      if (!a.isFeatured && b.isFeatured) return 1;
-
-      // 2. If both are featured or not featured, sort by date (newest first)
-      return new Date(b.addedOn).getTime() - new Date(a.addedOn).getTime();
-    });
-  }, [resources, search, selectedCategory]);
+  }, [filteredResources, sortBy, likeCounts]);
 
   const handleLikeToggle = async (resourceId: string) => {
     try {
@@ -225,11 +247,32 @@ function App() {
           </div>
 
           <div className="space-y-4">
-            <SearchBar value={search} onChange={setSearch} />
-            <CategoryFilter
-              selectedCategory={selectedCategory}
-              onSelect={setSelectedCategory}
-            />
+            <div className="flex gap-4 items-center">
+              <div className="flex-1">
+                <SearchBar value={searchQuery} onChange={setSearchQuery} />
+              </div>
+              <button
+                onClick={() => setIsDrawerOpen(true)}
+                className="md:hidden p-2 bg-gray-700 rounded-md text-white"
+              >
+                Filter & Sort
+              </button>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="hidden md:block bg-gray-800 border border-gray-700 rounded-md p-2 text-white"
+              >
+                <option value="featured">Sort by: Featured</option>
+                <option value="popular">Sort by: Popular</option>
+                <option value="newest">Sort by: Newest</option>
+              </select>
+            </div>
+            <div className="hidden md:block">
+              <CategoryFilter
+                selectedCategory={selectedCategory}
+                onSelect={setSelectedCategory}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -237,7 +280,7 @@ function App() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {filteredResources.map((resource) => {
+          {sortedResources.map((resource) => {
             // Get the dynamic data
             const count = likeCounts.get(resource.id) || 0;
             const isLiked = userLikes.has(resource.id);
@@ -257,7 +300,7 @@ function App() {
           })}
         </div>
 
-        {filteredResources.length === 0 && (
+        {sortedResources.length === 0 && (
           <div className="text-center py-12">
             <p className="text-gray-400 text-lg">
               No resources found matching your criteria.
@@ -265,6 +308,105 @@ function App() {
           </div>
         )}
       </main>
+
+      {/* Filter & Sort Drawer (Mobile) */}
+      {isDrawerOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-50"
+          onClick={() => setIsDrawerOpen(false)}
+        >
+          <div
+            className="absolute top-0 right-0 h-full w-4/5 max-w-sm bg-gray-900 shadow-xl p-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Drawer Header */}
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-white">Filter & Sort</h2>
+              <button
+                onClick={() => setIsDrawerOpen(false)}
+                className="text-gray-400 hover:text-white text-2xl leading-none"
+              >
+                &times;
+              </button>
+            </div>
+
+            {/* Drawer Content */}
+            {/* 1. Sort By Dropdown */}
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-300 mb-2">
+                Sort by
+              </label>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="w-full bg-gray-800 border border-gray-700 rounded-md p-2 text-white"
+              >
+                <option value="featured">Sort by: Featured</option>
+                <option value="popular">Sort by: Popular</option>
+                <option value="newest">Sort by: Newest</option>
+              </select>
+            </div>
+
+            {/* 2. Category Filter List */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-3">Categories</h3>
+              <div className="flex flex-col space-y-2 max-h-[60vh] overflow-y-auto">
+                <button
+                  onClick={() => {
+                    setSelectedCategory(null);
+                    setIsDrawerOpen(false);
+                  }}
+                  className={`w-full text-left p-2 rounded-md ${
+                    !selectedCategory
+                      ? "bg-blue-600 text-white"
+                      : "text-gray-300 hover:bg-gray-800"
+                  }`}
+                >
+                  All
+                </button>
+                {[
+                  "CSS",
+                  "TypeScript",
+                  "Framework",
+                  "UI Library",
+                  "State Management",
+                  "Accessibility",
+                  "Performance",
+                  "Testing",
+                  "Security",
+                  "Tool",
+                  "Learning",
+                  "Design Resources",
+                  "PWA",
+                  "Animation",
+                  "Data Visualization",
+                  "3D & WebGL",
+                  "Platforms & Hosting",
+                  "Public APIs",
+                  "Git",
+                  "Utilities",
+                  "Web VR",
+                ].map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => {
+                      setSelectedCategory(category as Category);
+                      setIsDrawerOpen(false);
+                    }}
+                    className={`w-full text-left p-2 rounded-md ${
+                      selectedCategory === category
+                        ? "bg-blue-600 text-white"
+                        : "text-gray-300 hover:bg-gray-800"
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
