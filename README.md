@@ -76,6 +76,7 @@
 - [Flexbox Froggy](http://flexboxfroggy.com/) - Interactive game to learn Flexbox. Makes learning fun and memorable.
 - [SMACSS](https://smacss.com/) - Scalable and Modular Architecture for CSS. Essential reading for organizing large CSS codebases.
 - [State of CSS](https://stateofcss.com/) - Annual CSS survey. Learn what CSS features developers use.
+- [Style Guides](http://styleguides.io/) - Collection of style guide examples. Inspiration for creating your own.
 - [Understanding EM and REM](https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984) - Clear explanation of when to use em vs rem. Solves a common CSS confusion.
 
 ### JavaScript / TypeScript
@@ -90,8 +91,10 @@
 - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) - The most reliable JavaScript reference. Always up-to-date and comprehensive.
 - [RxJS Documentation](https://rxjs.dev/) - Official RxJS docs. Comprehensive guides and API reference.
 - [State of JS](https://stateofjs.com/) - Annual survey of JavaScript ecosystem. See what
+- [TypeHero](https://typehero.dev/) - An ultimate, in-depth course and community for mastering modern TypeScript. Great for all skill levels.
 - [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript. Adds type safety and better tooling.
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) - Official TypeScript documentation. The best place to learn TypeScript.
+- [You Don't Know JS Yet (YDKJS)](https://github.com/getify/You-Dont-Know-JS) - The essential book series for a deep understanding of JavaScript's core mechanics (scopes, closures, 'this', async).
 
 ## Core Concepts
 
@@ -138,6 +141,7 @@
 - [React Query (TanStack Query)](https://tanstack.com/query) - The best data fetching library for React. Handles caching, synchronization, and updates automatically.
 - [React Router](https://reactrouter.com/) - The standard routing library for React. Declarative and powerful.
 - [Redux Toolkit](https://redux-toolkit.js.org/) - The official, opinionated way to write Redux. Much simpler than traditional Redux.
+- [Zustand](https://github.com/pmndrs/zustand) - A small, fast, and scalable bearbones state-management solution for React. A popular alternative to Redux.
 
 ### Angular
 
@@ -204,6 +208,7 @@
 - [AST Explorer](https://astexplorer.net/) - Interactive tool to explore JavaScript AST. Essential for understanding how code is parsed.
 - [Can I Use](http://caniuse.com/) - Essential browser compatibility checker. Check feature support before using any CSS property.
 - [Carbon](https://carbon.now.sh/) - Create beautiful code screenshots. Perfect for blog posts and documentation.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Official documentation for Chrome's built-in web developer tools. Essential for debugging, profiling, and auditing.
 - [CodeSandbox](https://codesandbox.io/) - Online IDE for React, Vue, and more. Share code instantly.
 - [Cubic Bezier](http://cubic-bezier.com/) - Interactive tool for creating custom cubic-bezier transitions. Essential for fine-tuning animations.
 - [Dabblet](http://dabblet.com/) - Interactive CSS playground by Lea Verou. Perfect for quick experiments.
@@ -248,6 +253,7 @@
 - [Brand Colors](https://brandcolors.net/) - Collection of official brand color palettes. Useful for client work.
 - [Chakra UI](https://chakra-ui.com/) - Simple, modular React component library. Great developer experience.
 - [Coolors](https://coolors.co/) - Best color palette generator. Press spacebar to generate beautiful color schemes.
+- [Figma](https://www.figma.com/) - The industry-standard collaborative interface design tool. Essential for developers to inspect designs and export assets.
 - [Font Awesome](https://fontawesome.com/) - Popular icon font library. Free and paid tiers available.
 - [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons. Made by Tailwind CSS team.
 - [Lucide](https://lucide.dev/) - Beautiful icon library. Fork of Feather icons with more icons.
@@ -255,6 +261,7 @@
 - [Material Design](https://m3.material.io/) - Google
 - [Pexels](https://www.pexels.com/) - Free stock photos and videos. Great alternative to Unsplash.
 - [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible component primitives. Build your own design system.
+- [shadcn](https://ui.shadcn.com/) - A collection of beautifully designed, accessible, and unstyled React components built with Radix UI and Tailwind CSS, meant to be copied into your codebase
 - [Unsplash](https://unsplash.com/) - High-quality free stock photos. The best free photo resource.
 
 ### Animation
@@ -300,13 +307,15 @@
 - [freeCodeCamp](https://www.freecodecamp.org/) - Free coding bootcamp. Comprehensive curriculum with certifications.
 - [Frontend Interview Handbook](https://github.com/yangshun/front-end-interview-handbook) - Comprehensive frontend interview guide. Great for job preparation.
 - [Frontend Masters](https://frontendmasters.com/) - Premium video courses from industry experts. Best paid resource.
+- [GraphQL](https://graphql.org/) - The official documentation for GraphQL, a query language for your APIs and a runtime for fulfilling those queries.
+- [GreatFrontend](https://www.greatfrontend.com/) - The best platform for practicing frontend system design and preparing for frontend interviews.
 - [Learn RxJS](https://www.learnrxjs.io/) - Best resource for learning RxJS. Clear explanations and examples.
 - [LeetCode](https://leetcode.com/) - Best platform for coding interview preparation. Practice algorithms and data structures.
 - [MDN Web Docs](https://developer.mozilla.org/) - The most reliable web documentation. Always accurate and up-to-date.
 - [Micro Frontends Article](https://martinfowler.com/articles/micro-frontends.html) - Comprehensive guide to micro frontends.
 - [Node.js Documentation](https://nodejs.org/docs/) - Official Node.js docs. Comprehensive API reference and guides.
 - [Regular Expressions Info](https://www.regular-expressions.info/) - Comprehensive regex tutorial. The best resource for learning regex.
-- [Style Guides](http://styleguides.io/) - Collection of style guide examples. Inspiration for creating your own.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs. A must-have for modern CSS architecture.
 - [UI Movement](https://uimovement.com/) - Curated UI animations and interactions. Daily inspiration.
 - [useHooks](https://usehooks.com/) - Collection of useful React hooks. Great for learning and reference.
 - [Vue School](https://vueschool.io/) - Premium Vue.js courses. High-quality video tutorials.
