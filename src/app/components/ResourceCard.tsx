@@ -17,7 +17,7 @@ export function ResourceCard({
   onLikeToggle,
 }: ResourceCardProps) {
   return (
-    <div className="flex h-full flex-col rounded-lg border border-gray-700 bg-gray-800 p-4">
+    <div className="flex h-full flex-col rounded-lg border border-gray-700 bg-gray-800 p-4 transition-all duration-300 hover:border-blue-500 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.5),0_0_20px_rgba(59,130,246,0.3)]">
       {/* 1. HEADER (Clickable Title with Icon) */}
       <a
         href={resource.url}
@@ -46,8 +46,8 @@ export function ResourceCard({
         {resource.description}
       </p>
 
-      {/* 4. FOOTER (Tags on left, Like on right) */}
-      <div className="mt-auto flex items-center justify-between">
+      {/* 4. FOOTER */}
+      <div className="mt-auto space-y-3">
         {/* Tag List */}
         <div className="flex flex-wrap gap-2">
           {resource.tags.map((tag) => (
@@ -55,21 +55,24 @@ export function ResourceCard({
           ))}
         </div>
 
-        {/* Like Button */}
-        <button
-          onClick={onLikeToggle}
-          className={`flex items-center gap-1.5 text-sm ${
-            isLiked
-              ? "text-pink-500" // Liked state
-              : "text-gray-400 hover:text-white" // Default state
-          }`}
-        >
-          <Heart
-            className={`h-4 w-4 ${isLiked ? "fill-current" : ""}`}
-            strokeWidth={2}
-          />
-          <span>{likeCount}</span>
-        </button>
+        {/* Actions Row (Like button and future actions) */}
+        <div className="flex items-center justify-end gap-4">
+          {/* Like Button */}
+          <button
+            onClick={onLikeToggle}
+            className={`flex items-center gap-1.5 text-sm ${
+              isLiked
+                ? "text-pink-500" // Liked state
+                : "text-gray-400 hover:text-white" // Default state
+            }`}
+          >
+            <Heart
+              className={`h-4 w-4 ${isLiked ? "fill-current" : ""}`}
+              strokeWidth={2}
+            />
+            <span>{likeCount}</span>
+          </button>
+        </div>
       </div>
     </div>
   );
