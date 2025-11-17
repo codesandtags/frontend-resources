@@ -1778,5 +1778,15 @@
     "tags": ["learning", "interview", "preparation", "system-design"],
     "addedOn": "2025-11-14",
     "isFeatured": true
+  },
+  {
+    "id": "shadcn",
+    "title": "shadcn",
+    "url": "https://ui.shadcn.com/",
+    "description": "A collection of beautifully designed, accessible, and unstyled React components built with Radix UI and Tailwind CSS, meant to be copied into your codebase",
+    "category": "UI Library",
+    "tags": ["react", "ui", "components", "tailwind", "library", "css"],
+    "addedOn": "2025-11-15",
+    "isFeatured": false
   }
 ]
