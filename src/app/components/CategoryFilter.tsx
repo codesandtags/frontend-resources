@@ -53,7 +53,13 @@ export function CategoryFilter({
       {categories.map((category) => (
         <button
           key={category}
-          onClick={() => onSelect(category)}
+          onClick={() => {
+            if (selectedCategory === category) {
+              onSelect(null);
+            } else {
+              onSelect(category);
+            }
+          }}
           className={`px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap flex-shrink-0
             ${
               selectedCategory === category

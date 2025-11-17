@@ -10,7 +10,7 @@ export function Tag({ label }: TagProps) {
 
   return (
     <span
-      className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium ${bg} ${text}`}
+      className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-sm font-medium ${bg} ${text}`}
     >
       <TagIcon className="h-2 w-2" />
       {label}
