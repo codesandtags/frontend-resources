@@ -17,55 +17,62 @@ export function ResourceCard({
   onLikeToggle,
 }: ResourceCardProps) {
   return (
-    <div
-      className={`
-        relative bg-gray-800 rounded-xl border p-6 transition-all hover:shadow-lg hover:shadow-black/20
-        ${resource.isFeatured ? 'border-yellow-500 hover:border-yellow-400' : 'border-transparent'}
-      `}
-    >
-      {/* Like button in top-right corner */}
-      <button
-        onClick={onLikeToggle}
-        className={`absolute top-4 right-4 flex items-center gap-1 bg-gray-800 rounded px-3 py-1.5 transition-colors z-10 ${
-          isLiked
-            ? "text-pink-400 hover:text-pink-300"
-            : "text-gray-400 hover:text-pink-400"
-        } hover:bg-gray-700`}
+    <div className="flex h-full flex-col rounded-lg border border-gray-700 bg-gray-800 p-4 transition-all duration-300 hover:border-blue-500 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.5),0_0_20px_rgba(59,130,246,0.3)]">
+      {/* 1. HEADER (Clickable Title with Icon) */}
+      <a
+        href={resource.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group mb-2 flex items-center gap-2"
       >
-        <Heart className={`h-4 w-4 ${isLiked ? "fill-current" : ""}`} />
-        <span className="text-sm">{likeCount}</span>
-      </button>
-
-      <div className="flex justify-between items-start mb-4 pr-20">
-        <div className="flex items-start gap-3">
-          <div className="text-blue-400">
-            <TechIcon category={resource.category} />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-2">
-              {resource.title}
-            </h3>
-            {/* <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-slate-700/20 text-slate-300 text-right">
-              {resource.category}
-            </span> */}
-          </div>
+        <div className="text-blue-400 flex-shrink-0">
+          <TechIcon category={resource.category} className="h-5 w-5" />
         </div>
-        <a
-          href={resource.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-400 hover:text-blue-400 transition-colors mt-1"
-        >
-          <ExternalLink className="h-5 w-5" />
-        </a>
-      </div>
+        <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors flex-1">
+          {resource.title}
+        </h3>
+        <ExternalLink className="h-4 w-4 text-gray-400 group-hover:text-blue-400 transition-colors flex-shrink-0" />
+      </a>
 
-      <p className="text-gray-300 mb-4">{resource.description}</p>
+      {/* 2. FEATURED LABEL (Conditional) */}
+      {resource.isFeatured && (
+        <div className="mb-2 text-xs font-medium text-yellow-400">
+          ⭐ Featured
+        </div>
+      )}
 
-      <div className="flex flex-wrap gap-2">
-        {resource.tags.map((tag) => (
-          <Tag key={tag} label={tag} />
-        ))}
+      {/* 3. DESCRIPTION (Grows to fill space) */}
+      <p className="mb-4 text-sm text-gray-400 flex-grow">
+        {resource.description}
+      </p>
+
+      {/* 4. FOOTER */}
+      <div className="mt-auto space-y-3">
+        {/* Tag List */}
+        <div className="flex flex-wrap gap-2">
+          {resource.tags.map((tag) => (
+            <Tag key={tag} label={tag} />
+          ))}
+        </div>
+
+        {/* Actions Row (Like button and future actions) */}
+        <div className="flex items-center justify-end gap-4">
+          {/* Like Button */}
+          <button
+            onClick={onLikeToggle}
+            className={`flex items-center gap-1.5 text-sm ${
+              isLiked
+                ? "text-pink-500" // Liked state
+                : "text-gray-400 hover:text-white" // Default state
+            }`}
+          >
+            <Heart
+              className={`h-4 w-4 ${isLiked ? "fill-current" : ""}`}
+              strokeWidth={2}
+            />
+            <span>{likeCount}</span>
+          </button>
+        </div>
       </div>
     </div>
   );
