@@ -12,8 +12,8 @@ import Image from "next/image";
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState('featured'); // default sort
-  const [selectedCategory, setSelectedCategory] = useState<Category | null>(
-    null
+  const [selectedCategories, setSelectedCategories] = useState<Set<Category>>(
+    new Set()
   );
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [likeCounts, setLikeCounts] = useState<Map<string, number>>(new Map());
@@ -97,10 +97,10 @@ function App() {
     const lowerCaseQuery = searchQuery.toLowerCase();
     return (
       resources
-        // First, filter by the active category
+        // First, filter by the active categories (OR logic - show if matches any selected category)
         .filter((resource) => {
-          if (!selectedCategory) return true;
-          return resource.category.toLowerCase() === selectedCategory.toLowerCase();
+          if (selectedCategories.size === 0) return true;
+          return selectedCategories.has(resource.category as Category);
         })
         // Next, filter by the search query
         .filter((resource) => {
@@ -112,7 +112,7 @@ function App() {
           );
         })
     );
-  }, [resources, selectedCategory, searchQuery]);
+  }, [resources, selectedCategories, searchQuery]);
 
   // 2. Create a memoized list that SORTS the filtered results
   const sortedResources = useMemo(() => {
@@ -239,14 +239,10 @@ function App() {
         </div>
       </nav>
 
-      {/* Header */}
-      <div className="bg-gray-800 border-b border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center gap-3 mb-6">
-            <h1 className="text-2xl font-bold text-white"></h1>
-          </div>
-
-          <div className="space-y-4">
+      {/* Sticky Search Bar */}
+      <div className="sticky top-16 z-40 bg-gray-800 border-b border-gray-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="space-y-3">
             <div className="flex gap-4 items-center">
               <div className="flex-1">
                 <SearchBar value={searchQuery} onChange={setSearchQuery} />
@@ -267,46 +263,75 @@ function App() {
                 <option value="newest">Sort by: Newest</option>
               </select>
             </div>
-            <div className="hidden md:block">
-              <CategoryFilter
-                selectedCategory={selectedCategory}
-                onSelect={setSelectedCategory}
-              />
-            </div>
+            {selectedCategories.size > 0 && (
+              <div className="flex items-center gap-2 text-sm text-gray-400">
+                <span>{selectedCategories.size} filter{selectedCategories.size > 1 ? 's' : ''} applied</span>
+                <button
+                  onClick={() => setSelectedCategories(new Set())}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <span className="text-xs">×</span>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {sortedResources.map((resource) => {
-            // Get the dynamic data
-            const count = likeCounts.get(resource.id) || 0;
-            const isLiked = userLikes.has(resource.id);
+        <div className="flex gap-8">
+          {/* Left: Resource Grid */}
+          <div className="flex-1 min-w-0">
+            <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
+              {sortedResources.map((resource) => {
+                // Get the dynamic data
+                const count = likeCounts.get(resource.id) || 0;
+                const isLiked = userLikes.has(resource.id);
 
-            return (
-              <ResourceCard
-                key={resource.id}
-                resource={{
-                  ...resource,
-                  category: resource.category as Category,
-                }}
-                likeCount={count}
-                isLiked={isLiked}
-                onLikeToggle={() => handleLikeToggle(resource.id)}
-              />
-            );
-          })}
-        </div>
+                return (
+                  <ResourceCard
+                    key={resource.id}
+                    resource={{
+                      ...resource,
+                      category: resource.category as Category,
+                    }}
+                    likeCount={count}
+                    isLiked={isLiked}
+                    onLikeToggle={() => handleLikeToggle(resource.id)}
+                  />
+                );
+              })}
+            </div>
 
-        {sortedResources.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-400 text-lg">
-              No resources found matching your criteria.
-            </p>
+            {sortedResources.length === 0 && (
+              <div className="text-center py-12">
+                <p className="text-gray-400 text-lg">
+                  No resources found matching your criteria.
+                </p>
+              </div>
+            )}
           </div>
-        )}
+
+          {/* Right: Category Filter Sidebar (Desktop only) */}
+          <aside className="hidden lg:block w-80 flex-shrink-0">
+            <div className="sticky top-24">
+              <CategoryFilter
+                selectedCategories={selectedCategories}
+                onToggle={(category) => {
+                  const newSet = new Set(selectedCategories);
+                  if (newSet.has(category)) {
+                    newSet.delete(category);
+                  } else {
+                    newSet.add(category);
+                  }
+                  setSelectedCategories(newSet);
+                }}
+                onClear={() => setSelectedCategories(new Set())}
+              />
+            </div>
+          </aside>
+        </div>
       </main>
 
       {/* Filter & Sort Drawer (Mobile) */}
@@ -349,21 +374,25 @@ function App() {
 
             {/* 2. Category Filter List */}
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">Categories</h3>
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="text-lg font-semibold text-white">
+                  Categories
+                  {selectedCategories.size > 0 && (
+                    <span className="text-sm font-normal text-gray-400 ml-2">
+                      ({selectedCategories.size} selected)
+                    </span>
+                  )}
+                </h3>
+                {selectedCategories.size > 0 && (
+                  <button
+                    onClick={() => setSelectedCategories(new Set())}
+                    className="text-xs text-gray-400 hover:text-white transition-colors"
+                  >
+                    Clear
+                  </button>
+                )}
+              </div>
               <div className="flex flex-col space-y-2 max-h-[60vh] overflow-y-auto">
-                <button
-                  onClick={() => {
-                    setSelectedCategory(null);
-                    setIsDrawerOpen(false);
-                  }}
-                  className={`w-full text-left p-2 rounded-md ${
-                    !selectedCategory
-                      ? "bg-blue-600 text-white"
-                      : "text-gray-300 hover:bg-gray-800"
-                  }`}
-                >
-                  All
-                </button>
                 {[
                   "CSS",
                   "TypeScript",
@@ -386,22 +415,31 @@ function App() {
                   "Git",
                   "Utilities",
                   "Web VR",
-                ].map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => {
-                      setSelectedCategory(category as Category);
-                      setIsDrawerOpen(false);
-                    }}
-                    className={`w-full text-left p-2 rounded-md ${
-                      selectedCategory === category
-                        ? "bg-blue-600 text-white"
-                        : "text-gray-300 hover:bg-gray-800"
-                    }`}
-                  >
-                    {category}
-                  </button>
-                ))}
+                ].map((category) => {
+                  const isSelected = selectedCategories.has(category as Category);
+                  return (
+                    <label
+                      key={category}
+                      className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-800 cursor-pointer transition-colors"
+                    >
+                      <input
+                        type="checkbox"
+                        checked={isSelected}
+                        onChange={() => {
+                          const newSet = new Set(selectedCategories);
+                          if (newSet.has(category as Category)) {
+                            newSet.delete(category as Category);
+                          } else {
+                            newSet.add(category as Category);
+                          }
+                          setSelectedCategories(newSet);
+                        }}
+                        className="w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-600 focus:ring-blue-500 focus:ring-2 focus:ring-offset-0 cursor-pointer"
+                      />
+                      <span className="text-sm text-gray-300 flex-1">{category}</span>
+                    </label>
+                  );
+                })}
               </div>
             </div>
           </div>
