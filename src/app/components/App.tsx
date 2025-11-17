@@ -11,7 +11,7 @@ import Image from "next/image";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [sortBy, setSortBy] = useState('featured'); // default sort
+  const [sortBy, setSortBy] = useState("featured"); // default sort
   const [selectedCategories, setSelectedCategories] = useState<Set<Category>>(
     new Set()
   );
@@ -104,11 +104,13 @@ function App() {
         })
         // Next, filter by the search query
         .filter((resource) => {
-          if (lowerCaseQuery === '') return true;
+          if (lowerCaseQuery === "") return true;
           return (
             resource.title.toLowerCase().includes(lowerCaseQuery) ||
             resource.description.toLowerCase().includes(lowerCaseQuery) ||
-            resource.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery))
+            resource.tags.some((tag) =>
+              tag.toLowerCase().includes(lowerCaseQuery)
+            )
           );
         })
     );
@@ -119,15 +121,15 @@ function App() {
     // Make a copy to avoid mutating the memoized 'filteredResources'
     return [...filteredResources].sort((a, b) => {
       switch (sortBy) {
-        case 'popular':
+        case "popular":
           // Sort by 'like_count' descending
           return (likeCounts.get(b.id) || 0) - (likeCounts.get(a.id) || 0);
 
-        case 'newest':
+        case "newest":
           // Sort by 'addedOn' date descending
           return new Date(b.addedOn).getTime() - new Date(a.addedOn).getTime();
 
-        case 'featured':
+        case "featured":
         default:
           // This is the logic we had before
           if (a.isFeatured && !b.isFeatured) return -1;
@@ -147,7 +149,8 @@ function App() {
 
       if (!session) {
         // Sign in anonymously
-        const { data: authData, error: authError } = await supabase.auth.signInAnonymously();
+        const { data: authData, error: authError } =
+          await supabase.auth.signInAnonymously();
         if (authError) {
           console.error("Error signing in anonymously:", authError);
           return; // Exit early if auth fails
@@ -239,6 +242,20 @@ function App() {
         </div>
       </nav>
 
+      {/* Hero Section */}
+      <div className="bg-gray-800 border-b border-gray-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <p className="text-center text-gray-300 text-lg">
+            🚀 A community-curated list of the best frontend tools, libraries,
+            and learning materials with over{" "}
+            <span className="font-semibold text-orange-500">
+              {resources.length}
+            </span>{" "}
+            resources.
+          </p>
+        </div>
+      </div>
+
       {/* Sticky Search Bar */}
       <div className="sticky top-16 z-40 bg-gray-800 border-b border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -265,7 +282,10 @@ function App() {
             </div>
             {selectedCategories.size > 0 && (
               <div className="flex items-center gap-2 text-sm text-gray-400">
-                <span>{selectedCategories.size} filter{selectedCategories.size > 1 ? 's' : ''} applied</span>
+                <span>
+                  {selectedCategories.size} filter
+                  {selectedCategories.size > 1 ? "s" : ""} applied
+                </span>
                 <button
                   onClick={() => setSelectedCategories(new Set())}
                   className="text-gray-400 hover:text-white transition-colors"
@@ -416,7 +436,9 @@ function App() {
                   "Utilities",
                   "Web VR",
                 ].map((category) => {
-                  const isSelected = selectedCategories.has(category as Category);
+                  const isSelected = selectedCategories.has(
+                    category as Category
+                  );
                   return (
                     <label
                       key={category}
@@ -436,7 +458,9 @@ function App() {
                         }}
                         className="w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-600 focus:ring-blue-500 focus:ring-2 focus:ring-offset-0 cursor-pointer"
                       />
-                      <span className="text-sm text-gray-300 flex-1">{category}</span>
+                      <span className="text-sm text-gray-300 flex-1">
+                        {category}
+                      </span>
                     </label>
                   );
                 })}
