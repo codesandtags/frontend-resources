@@ -195,7 +195,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-900">
       {/* Navigation */}
-      <nav className="bg-gray-800/50 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+      <nav className="bg-gray-800 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
@@ -208,7 +208,6 @@ function App() {
               <span className="text-sm sm:text-lg font-semibold text-white leading-tight">
                 Frontend Resources
               </span>
-
             </div>
             <div className="flex items-center gap-4">
               <a
