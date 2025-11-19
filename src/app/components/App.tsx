@@ -208,9 +208,7 @@ function App() {
               <span className="text-sm sm:text-lg font-semibold text-white leading-tight">
                 Frontend Resources
               </span>
-              <span className="border rounded-md px-2 text-xs text-slate-500 border-slate-500">
-                BETA
-              </span>
+
             </div>
             <div className="flex items-center gap-4">
               <a
