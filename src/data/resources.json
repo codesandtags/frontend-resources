@@ -100,6 +100,26 @@
     "isFeatured": false
   },
   {
+    "id": "grid-garden",
+    "title": "Grid Garden",
+    "url": "https://cssgridgarden.com/",
+    "description": "Interactive game to learn CSS Grid. Write CSS code to grow your carrot garden and master grid layout.",
+    "category": "CSS",
+    "tags": ["css", "grid", "game", "interactive"],
+    "addedOn": "2025-01-15",
+    "isFeatured": false
+  },
+  {
+    "id": "flexbox-defense",
+    "title": "Flexbox Defense",
+    "url": "http://www.flexboxdefense.com/",
+    "description": "Tower defense game that teaches Flexbox. Position your towers using CSS Flexbox properties to stop enemies.",
+    "category": "CSS",
+    "tags": ["css", "flexbox", "game", "interactive"],
+    "addedOn": "2025-01-15",
+    "isFeatured": false
+  },
+  {
     "id": "css-tricks",
     "title": "CSS Tricks",
     "url": "https://css-tricks.com/",
@@ -237,6 +257,23 @@
     "category": "Learning",
     "tags": ["javascript", "patterns", "architecture"],
     "addedOn": "2024-01-01",
+    "isFeatured": false
+  },
+  {
+    "id": "patterns-dev",
+    "title": "Patterns.dev",
+    "url": "https://www.patterns.dev/",
+    "description": "Free online resource on design, rendering, and performance patterns for building powerful web apps. Covers JavaScript, React, Vue, and performance optimization patterns.",
+    "category": "Learning",
+    "tags": [
+      "patterns",
+      "architecture",
+      "javascript",
+      "react",
+      "vue",
+      "performance"
+    ],
+    "addedOn": "2025-01-15",
     "isFeatured": false
   },
   {
@@ -1550,6 +1587,16 @@
     "isFeatured": false
   },
   {
+    "id": "lukasz-adam-illustrations",
+    "title": "Lukasz Adam Illustrations",
+    "url": "https://lukaszadam.com/illustrations",
+    "description": "Free SVG illustrations for commercial and personal use under CC0 license. No attribution required. Perfect for websites and projects.",
+    "category": "Design Resources",
+    "tags": ["illustrations", "svg", "free", "design"],
+    "addedOn": "2025-01-15",
+    "isFeatured": false
+  },
+  {
     "id": "font-awesome",
     "title": "Font Awesome",
     "url": "https://fontawesome.com/",
@@ -1663,9 +1710,17 @@
     "id": "web-dev",
     "title": "Web.dev",
     "url": "https://web.dev/",
-    "description": "Google",
+    "description": "Google's comprehensive resource for modern web development. Learn about performance, accessibility, PWA, security, and best practices. Includes guides, tools, and case studies to build fast, accessible, and engaging web experiences.",
     "category": "Learning",
-    "tags": ["web-dev", "google", "guides"],
+    "tags": [
+      "web-dev",
+      "google",
+      "guides",
+      "performance",
+      "accessibility",
+      "pwa",
+      "best-practices"
+    ],
     "addedOn": "2024-01-01",
     "isFeatured": false
   },
