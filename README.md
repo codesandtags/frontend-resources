@@ -73,7 +73,9 @@
 - [CSS Tricks](https://css-tricks.com/) - The best CSS resource on the web. Articles, guides, and snippets for everything CSS.
 - [CSS3 Patterns Gallery](http://lea.verou.me/css3patterns/#) - Amazing collection of pure CSS background patterns. Great for inspiration.
 - [Easings](https://easings.net/) - Visual reference for CSS easing functions. Perfect for smooth animations.
+- [Flexbox Defense](http://www.flexboxdefense.com/) - Tower defense game that teaches Flexbox. Position your towers using CSS Flexbox properties to stop enemies.
 - [Flexbox Froggy](http://flexboxfroggy.com/) - Interactive game to learn Flexbox. Makes learning fun and memorable.
+- [Grid Garden](https://cssgridgarden.com/) - Interactive game to learn CSS Grid. Write CSS code to grow your carrot garden and master grid layout.
 - [SMACSS](https://smacss.com/) - Scalable and Modular Architecture for CSS. Essential reading for organizing large CSS codebases.
 - [State of CSS](https://stateofcss.com/) - Annual CSS survey. Learn what CSS features developers use.
 - [Style Guides](http://styleguides.io/) - Collection of style guide examples. Inspiration for creating your own.
@@ -89,6 +91,7 @@
 - [JavaScript Module Systems](https://auth0.com/blog/javascript-module-systems-showdown/) - Clear comparison of CommonJS, AMD, ES6 modules. Helps understand module evolution.
 - [JavaScript.info](https://javascript.info/) - Modern JavaScript tutorial. Covers ES6+ and modern practices.
 - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) - The most reliable JavaScript reference. Always up-to-date and comprehensive.
+- [Patterns.dev](https://www.patterns.dev/) - Free online resource on design, rendering, and performance patterns for building powerful web apps. Covers JavaScript, React, Vue, and performance optimization patterns.
 - [RxJS Documentation](https://rxjs.dev/) - Official RxJS docs. Comprehensive guides and API reference.
 - [State of JS](https://stateofjs.com/) - Annual survey of JavaScript ecosystem. See what
 - [TypeHero](https://typehero.dev/) - An ultimate, in-depth course and community for mastering modern TypeScript. Great for all skill levels.
@@ -257,6 +260,7 @@
 - [Font Awesome](https://fontawesome.com/) - Popular icon font library. Free and paid tiers available.
 - [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons. Made by Tailwind CSS team.
 - [Lucide](https://lucide.dev/) - Beautiful icon library. Fork of Feather icons with more icons.
+- [Lukasz Adam Illustrations](https://lukaszadam.com/illustrations) - Free SVG illustrations for commercial and personal use under CC0 license. No attribution required. Perfect for websites and projects.
 - [Mantine](https://mantine.dev/) - Full-featured React components library. Great defaults and customization.
 - [Material Design](https://m3.material.io/) - Google
 - [Pexels](https://www.pexels.com/) - Free stock photos and videos. Great alternative to Unsplash.
@@ -319,7 +323,7 @@
 - [UI Movement](https://uimovement.com/) - Curated UI animations and interactions. Daily inspiration.
 - [useHooks](https://usehooks.com/) - Collection of useful React hooks. Great for learning and reference.
 - [Vue School](https://vueschool.io/) - Premium Vue.js courses. High-quality video tutorials.
-- [Web.dev](https://web.dev/) - Google
+- [Web.dev](https://web.dev/) - Google's comprehensive resource for modern web development. Learn about performance, accessibility, PWA, security, and best practices. Includes guides, tools, and case studies to build fast, accessible, and engaging web experiences.
 - [WebGL Fundamentals](https://webglfundamentals.org/) - Excellent WebGL tutorials. Start here to understand WebGL basics.
 
 ### Public APIs
