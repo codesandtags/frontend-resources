@@ -119,6 +119,7 @@
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - Built into Chrome DevTools. Automated performance, accessibility, and SEO audits.
 - [Web.dev Performance](https://web.dev/performance/) - Google
 - [WebPageTest](https://www.webpagetest.org/) - Free tool for detailed performance analysis. More detailed than PageSpeed Insights.
+- [PageGuard](https://pageguard.org) - Free website health scanner combining SEO, accessibility (ADA/WCAG), performance, and best practices audits in one scan. Gets an AI-generated action plan.
 
 ### Security
 
