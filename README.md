@@ -239,6 +239,7 @@
 - [Transform Tools](https://transform.tools/) - Convert between formats (JSON, YAML, TypeScript, etc.). Incredibly useful.
 - [TypeScript Playground](https://www.typescriptlang.org/play) - Online TypeScript editor. Test TS code instantly.
 - [Yarn](https://yarnpkg.com/) - Fast, reliable package manager. Alternative to npm.
+- [ToolSparkr](https://toolsparkr.com) - Collection of 35+ free online developer tools — JSON formatter, URL encoder, password generator, Base64 encoder, hash generators, QR code generator, DNS lookup, and more. No signup, runs in browser.
 
 ### Git
 
