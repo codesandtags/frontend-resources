@@ -1853,5 +1853,15 @@
     "tags": ["react", "ui", "components", "tailwind", "library", "css"],
     "addedOn": "2025-11-15",
     "isFeatured": false
+  },
+  {
+    "id": "markstream",
+    "title": "Markstream",
+    "url": "https://markstream.simonhe.me/",
+    "description": "Open-source streaming Markdown renderer for AI chat interfaces, with incomplete-token handling, Mermaid, KaTeX, syntax highlighting, safe HTML, and SSR across major frontend frameworks.",
+    "category": "UI Library",
+    "tags": ["markdown", "ai", "streaming", "vue", "react", "svelte", "angular", "ssr"],
+    "addedOn": "2026-07-19",
+    "isFeatured": false
   }
 ]
