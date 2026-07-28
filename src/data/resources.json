@@ -1765,6 +1765,16 @@
     "isFeatured": false
   },
   {
+    "id": "tailwind-to-css-converter",
+    "title": "Tailwind to CSS Converter",
+    "url": "https://alltoolsverse.com/tools/tailwind-to-css/",
+    "description": "Convert common Tailwind CSS utility classes into plain CSS declarations directly in the browser, with unsupported classes flagged for manual review.",
+    "category": "Tool",
+    "tags": ["tailwind", "css", "converter", "frontend"],
+    "addedOn": "2026-07-28",
+    "isFeatured": false
+  },
+  {
     "id": "you-dont-know-js",
     "title": "You Don't Know JS Yet (YDKJS)",
     "url": "https://github.com/getify/You-Dont-Know-JS",
