@@ -267,6 +267,7 @@
 - [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible component primitives. Build your own design system.
 - [shadcn](https://ui.shadcn.com/) - A collection of beautifully designed, accessible, and unstyled React components built with Radix UI and Tailwind CSS, meant to be copied into your codebase
 - [Unsplash](https://unsplash.com/) - High-quality free stock photos. The best free photo resource.
+- [Vibe Coding UI Specification](https://horizonx.so/resources/vibe-coding-ui-specification) - Free MIT-licensed UI contract for AI-assisted frontend projects covering design tokens, component states, responsive behavior, accessibility, motion, and production review.
 
 ### Animation
 
