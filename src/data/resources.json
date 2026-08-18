@@ -1853,5 +1853,15 @@
     "tags": ["react", "ui", "components", "tailwind", "library", "css"],
     "addedOn": "2025-11-15",
     "isFeatured": false
+  },
+  {
+    "id": "uizze",
+    "title": "UIZZE",
+    "url": "https://github.com/uizze/uizze",
+    "description": "Free MIT anti-ui-slop Skill and deterministic no-account preview for coding agents; full UIZZE adds live UI research across 800,000+ real web and iOS screens, design contracts, validation, audits, and rendered critique.",
+    "category": "Design Resources",
+    "tags": ["design", "ui", "frontend", "ai", "coding-agents", "quality"],
+    "addedOn": "2026-08-18",
+    "isFeatured": false
   }
 ]

@@ -266,6 +266,7 @@
 - [Pexels](https://www.pexels.com/) - Free stock photos and videos. Great alternative to Unsplash.
 - [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible component primitives. Build your own design system.
 - [shadcn](https://ui.shadcn.com/) - A collection of beautifully designed, accessible, and unstyled React components built with Radix UI and Tailwind CSS, meant to be copied into your codebase
+- [UIZZE](https://github.com/uizze/uizze) - Free MIT anti-ui-slop Skill and deterministic no-account preview for coding agents; full UIZZE adds live UI research across 800,000+ real web and iOS screens, design contracts, validation, audits, and rendered critique.
 - [Unsplash](https://unsplash.com/) - High-quality free stock photos. The best free photo resource.
 
 ### Animation
@@ -311,6 +312,7 @@
 - [freeCodeCamp](https://www.freecodecamp.org/) - Free coding bootcamp. Comprehensive curriculum with certifications.
 - [Frontend Interview Handbook](https://github.com/yangshun/front-end-interview-handbook) - Comprehensive frontend interview guide. Great for job preparation.
 - [Frontend Masters](https://frontendmasters.com/) - Premium video courses from industry experts. Best paid resource.
+- [FrontendAtlas](https://frontendatlas.com/) - A step-by-step framework for answering frontend system design interview questions with clear trade-offs, state, and data flow.
 - [GraphQL](https://graphql.org/) - The official documentation for GraphQL, a query language for your APIs and a runtime for fulfilling those queries.
 - [GreatFrontend](https://www.greatfrontend.com/) - The best platform for practicing frontend system design and preparing for frontend interviews.
 - [Learn RxJS](https://www.learnrxjs.io/) - Best resource for learning RxJS. Clear explanations and examples.
