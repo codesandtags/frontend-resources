@@ -192,6 +192,7 @@
 
 ### Testing
 
+- [Agent QA](https://github.com/vostride/agent-qa) - Natural-language browser application testing with reusable execution memory, UI recovery, and CLI/MCP interfaces. Source-available under FSL-1.1-ALv2.
 - [Cypress](https://www.cypress.io/) - Popular E2E testing framework. Great developer experience with time-travel debugging.
 - [Jest](https://jestjs.io/) - The most popular JavaScript testing framework. Zero-config, great for React.
 - [Playwright](https://playwright.dev/) - Modern end-to-end testing. Faster and more reliable than Cypress.
@@ -311,6 +312,7 @@
 - [freeCodeCamp](https://www.freecodecamp.org/) - Free coding bootcamp. Comprehensive curriculum with certifications.
 - [Frontend Interview Handbook](https://github.com/yangshun/front-end-interview-handbook) - Comprehensive frontend interview guide. Great for job preparation.
 - [Frontend Masters](https://frontendmasters.com/) - Premium video courses from industry experts. Best paid resource.
+- [FrontendAtlas](https://frontendatlas.com/) - A step-by-step framework for answering frontend system design interview questions with clear trade-offs, state, and data flow.
 - [GraphQL](https://graphql.org/) - The official documentation for GraphQL, a query language for your APIs and a runtime for fulfilling those queries.
 - [GreatFrontend](https://www.greatfrontend.com/) - The best platform for practicing frontend system design and preparing for frontend interviews.
 - [Learn RxJS](https://www.learnrxjs.io/) - Best resource for learning RxJS. Clear explanations and examples.

@@ -847,6 +847,21 @@
     "isFeatured": false
   },
   {
+    "id": "agent-qa",
+    "title": "Agent QA",
+    "url": "https://github.com/vostride/agent-qa",
+    "description": "Natural-language browser application testing with reusable execution memory, UI recovery, and CLI/MCP interfaces. Source-available under FSL-1.1-ALv2.",
+    "category": "Testing",
+    "tags": [
+      "testing",
+      "e2e",
+      "automation",
+      "mcp"
+    ],
+    "addedOn": "2026-09-05",
+    "isFeatured": false
+  },
+  {
     "id": "jest",
     "title": "Jest",
     "url": "https://jestjs.io/",
