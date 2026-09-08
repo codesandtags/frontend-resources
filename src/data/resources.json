@@ -435,6 +435,16 @@
     "tags": ["accessibility", "testing", "tool"],
     "addedOn": "2024-01-01",
     "isFeatured": false
+  },  
+  {
+    "id": "accessible-svg-icons",
+    "title": "Accessible SVG Icons",
+    "url": "https://iconvectors.io/tutorials/accessible-svg-icons-aria-roles-labels.html",
+    "description": "Practical guidance for accessible SVG icons using ARIA labels, title and desc, decorative hiding, and screen-reader testing.",
+    "category": "Accessibility",
+    "tags": ["accessibility", "svg", "aria"],
+    "addedOn": "2026-09-08",
+    "isFeatured": false
   },
   {
     "id": "web-dev-performance",
