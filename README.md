@@ -138,6 +138,7 @@
 
 ### React Ecosystem
 
+- [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) - Open-source agentic software factory with an amazing UI that handles parallel Git worktrees for you, complete with programmatic verifications and fast review loops.
 - [Next.js](https://nextjs.org/) - The React framework for production. Server-side rendering, static generation, and more out of the box.
 - [React Documentation](https://react.dev/) - The new React docs are the best place to learn modern React. Interactive examples and clear explanations.
 - [React Hook Form](https://react-hook-form.com/) - Best form library for React. Minimal re-renders and great performance.
