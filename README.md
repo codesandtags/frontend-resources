@@ -257,6 +257,7 @@
 - [Brand Colors](https://brandcolors.net/) - Collection of official brand color palettes. Useful for client work.
 - [Chakra UI](https://chakra-ui.com/) - Simple, modular React component library. Great developer experience.
 - [Coolors](https://coolors.co/) - Best color palette generator. Press spacebar to generate beautiful color schemes.
+- [Design Details](https://designdetails.io/) - Free library of live websites with great motion, browsable by sections, type and color. Handy for finding a working scroll or hover pattern.
 - [Figma](https://www.figma.com/) - The industry-standard collaborative interface design tool. Essential for developers to inspect designs and export assets.
 - [Font Awesome](https://fontawesome.com/) - Popular icon font library. Free and paid tiers available.
 - [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons. Made by Tailwind CSS team.
