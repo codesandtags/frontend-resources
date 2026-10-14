@@ -227,6 +227,7 @@
 - [ngrok](https://ngrok.com/) - Secure tunnels to localhost. More reliable than LocalTunnel.
 - [npm trends](https://npmtrends.com/) - Compare npm package download trends. See what
 - [npms](https://npms.io/) - Better npm search. Finds packages by quality, not just popularity.
+- [Nutilz](https://nutilz.com) - Free browser-based developer utilities including regex tester, JSON formatter, converters, calculators, and code generators. No sign-up required.
 - [NVM](https://github.com/nvm-sh/nvm) - Node Version Manager. Switch between Node versions easily.
 - [PM2](https://pm2.keymetrics.io/) - Production process manager for Node.js. Keeps apps running forever.
 - [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager. Uses symlinks to save space.

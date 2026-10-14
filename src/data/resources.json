@@ -1863,5 +1863,15 @@
     "tags": ["react", "ui", "components", "tailwind", "library", "css"],
     "addedOn": "2025-11-15",
     "isFeatured": false
+  },
+  {
+    "id": "nutilz",
+    "title": "Nutilz",
+    "url": "https://nutilz.com",
+    "description": "Free browser-based developer utilities including regex tester, JSON formatter, converters, calculators, and code generators. No sign-up required.",
+    "category": "Development Tools",
+    "tags": ["tools", "utilities", "developer-tools", "converter", "formatter"],
+    "addedOn": "2026-08-28",
+    "isFeatured": false
   }
 ]
