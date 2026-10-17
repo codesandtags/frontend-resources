@@ -216,6 +216,7 @@
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Official documentation for Chrome's built-in web developer tools. Essential for debugging, profiling, and auditing.
 - [CodeSandbox](https://codesandbox.io/) - Online IDE for React, Vue, and more. Share code instantly.
 - [Cubic Bezier](http://cubic-bezier.com/) - Interactive tool for creating custom cubic-bezier transitions. Essential for fine-tuning animations.
+- [CurlShot](https://curlshot.com) - Free online tool and API to screenshot any web page on desktop, phone or tablet sizes, as PNG, JPEG, WebP, PDF or scrolling video.
 - [Dabblet](http://dabblet.com/) - Interactive CSS playground by Lea Verou. Perfect for quick experiments.
 - [Datadog](https://www.datadoghq.com/) - Application performance monitoring. Great for production monitoring.
 - [DevDocs](https://devdocs.io/) - Offline documentation aggregator. All your docs in one place.

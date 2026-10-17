@@ -1657,6 +1657,16 @@
     "isFeatured": false
   },
   {
+    "id": "curlshot",
+    "title": "CurlShot",
+    "url": "https://curlshot.com",
+    "description": "Free online tool and API to screenshot any web page on desktop, phone or tablet sizes, as PNG, JPEG, WebP, PDF or scrolling video.",
+    "category": "Utilities",
+    "tags": ["screenshots", "responsive", "tool", "api"],
+    "addedOn": "2026-10-16",
+    "isFeatured": false
+  },
+  {
     "id": "freecodecamp",
     "title": "freeCodeCamp",
     "url": "https://www.freecodecamp.org/",
