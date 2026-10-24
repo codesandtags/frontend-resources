@@ -220,6 +220,7 @@
 - [Datadog](https://www.datadoghq.com/) - Application performance monitoring. Great for production monitoring.
 - [DevDocs](https://devdocs.io/) - Offline documentation aggregator. All your docs in one place.
 - [GraphQL Playground](https://www.graphql-yoga.com/) - Interactive GraphQL IDE. Test queries and explore schemas.
+- [HTTP Header Checker](https://www.webtoolbench.com/http-header-checker) - Shows a site's response headers and tests HSTS, CSP, X-Frame-Options and other security headers. Useful before a frontend deploy goes live.
 - [JSON Formatter](https://jsonformatter.org/) - Format and validate JSON. Essential for API development.
 - [LocalTunnel](https://localtunnel.github.io/www/) - Expose localhost to the internet. Great for testing webhooks.
 - [LogRocket](https://logrocket.com/) - Session replay and frontend monitoring. See exactly what users experience.
