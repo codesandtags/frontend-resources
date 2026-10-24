@@ -255,6 +255,7 @@
 
 - [Angular Material](https://material.angular.io/) - Material Design components for Angular. Production-ready UI components.
 - [Ant Design](https://ant.design/) - Enterprise-class UI design language. Beautiful React components.
+- [APPLORE PNG to SVG](https://applore.app/png-to-svg) - Free in-browser PNG to SVG converter with full-color tracing that keeps transparent backgrounds. No upload or account needed, handy for icons and logos.
 - [Brand Colors](https://brandcolors.net/) - Collection of official brand color palettes. Useful for client work.
 - [Chakra UI](https://chakra-ui.com/) - Simple, modular React component library. Great developer experience.
 - [Coolors](https://coolors.co/) - Best color palette generator. Press spacebar to generate beautiful color schemes.
