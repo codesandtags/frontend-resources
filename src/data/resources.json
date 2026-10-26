@@ -907,6 +907,16 @@
     "isFeatured": false
   },
   {
+    "id": "ui-verify",
+    "title": "UI Verify",
+    "url": "https://uiverify.ai/",
+    "description": "Visual regression testing for Storybook, Playwright and Vitest. Screenshots each pull request and shows coding agents what changed over MCP.",
+    "category": "Testing",
+    "tags": ["testing", "visual-regression", "ai"],
+    "addedOn": "2026-10-26",
+    "isFeatured": false
+  },
+  {
     "id": "storybook",
     "title": "Storybook",
     "url": "https://storybook.js.org/",

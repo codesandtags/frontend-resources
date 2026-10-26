@@ -198,6 +198,7 @@
 - [Jest](https://jestjs.io/) - The most popular JavaScript testing framework. Zero-config, great for React.
 - [Playwright](https://playwright.dev/) - Modern end-to-end testing. Faster and more reliable than Cypress.
 - [Testing Library](https://testing-library.com/) - Simple and complete testing utilities. Encourages testing like users interact.
+- [UI Verify](https://uiverify.ai/) - Visual regression testing for Storybook, Playwright and Vitest. Screenshots each pull request and shows coding agents what changed over MCP.
 - [Vitest](https://vitest.dev/) - Fast unit test framework powered by Vite. Great alternative to Jest.
 
 ### Linting & Formatting
