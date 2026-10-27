@@ -1,5 +1,25 @@
 [
   {
+    "id": "toolknit-gradient-generator",
+    "title": "ToolKnit Gradient Generator",
+    "url": "https://toolknit.com/tools/gradient-generator.html",
+    "description": "Free browser-based generator for linear and radial CSS gradients, with editable color stops, live preview and CSS output.",
+    "category": "CSS",
+    "tags": ["css", "gradients", "colors"],
+    "addedOn": "2026-10-27",
+    "isFeatured": false
+  },
+  {
+    "id": "the-concise-typescript-book",
+    "title": "The Concise TypeScript Book",
+    "url": "https://github.com/gibbok/typescript-book",
+    "description": "Free and open-source TypeScript book covering fundamentals through advanced concepts, with 10,300+ stars on GitHub.",
+    "category": "TypeScript",
+    "tags": ["typescript", "book"],
+    "addedOn": "2026-10-17",
+    "isFeatured": false
+  },
+  {
     "id": "responsive-images-guide",
     "title": "Responsive Images Guide",
     "url": "http://cloudinary.com/blog/automatically_art_directed_responsive_images",

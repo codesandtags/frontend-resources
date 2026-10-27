@@ -79,6 +79,7 @@
 - [SMACSS](https://smacss.com/) - Scalable and Modular Architecture for CSS. Essential reading for organizing large CSS codebases.
 - [State of CSS](https://stateofcss.com/) - Annual CSS survey. Learn what CSS features developers use.
 - [Style Guides](http://styleguides.io/) - Collection of style guide examples. Inspiration for creating your own.
+- [ToolKnit Gradient Generator](https://toolknit.com/tools/gradient-generator.html) - Free browser-based generator for linear and radial CSS gradients, with editable color stops, live preview and CSS output.
 - [Understanding EM and REM](https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984) - Clear explanation of when to use em vs rem. Solves a common CSS confusion.
 
 ### JavaScript / TypeScript
