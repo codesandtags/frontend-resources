@@ -131,6 +131,7 @@
 
 ### Progressive Web Apps (PWA)
 
+- [Favicon Package Builder](https://radarmakers.com/tools/favicon-package-builder) - Free browser tool that generates favicon.ico, PNG icons and a web app manifest from a logo, with an actual-size 16-pixel preview and no file uploads.
 - [PWA Documentation](https://web.dev/progressive-web-apps/) - Google
 - [Service Worker Cookbook](https://serviceworke.rs/) - Collection of service worker recipes. Practical examples for common patterns.
 - [Web App Manifest](https://web.dev/add-manifest/) - Guide to creating app manifests. Makes your site installable.

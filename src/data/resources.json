@@ -547,6 +547,16 @@
     "isFeatured": false
   },
   {
+    "id": "favicon-package-builder",
+    "title": "Favicon Package Builder",
+    "url": "https://radarmakers.com/tools/favicon-package-builder",
+    "description": "Free browser tool that generates favicon.ico, PNG icons and a web app manifest from a logo, with an actual-size 16-pixel preview and no file uploads.",
+    "category": "PWA",
+    "tags": ["pwa", "favicon", "manifest", "icons"],
+    "addedOn": "2026-10-27",
+    "isFeatured": false
+  },
+  {
     "id": "pwa-documentation",
     "title": "PWA Documentation",
     "url": "https://web.dev/progressive-web-apps/",
