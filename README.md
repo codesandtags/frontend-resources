@@ -331,6 +331,7 @@
 
 ### Public APIs
 
+- [CSV to REST API](https://beeceptor.com/csv-to-api/) - Turn CSV data into a hosted REST API with CRUD operations for frontend prototypes and demos, without setting up a backend or creating an account.
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Fake REST API for testing. Perfect for prototypes and demos.
 - [Public APIs](https://github.com/public-apis/public-apis) - Curated list of free APIs. The best resource for finding APIs.
 - [REST Countries](https://restcountries.com/) - Free API for country data. No authentication required.

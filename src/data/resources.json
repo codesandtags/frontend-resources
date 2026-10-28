@@ -1,5 +1,15 @@
 [
   {
+    "id": "csv-to-rest-api",
+    "title": "CSV to REST API",
+    "url": "https://beeceptor.com/csv-to-api/",
+    "description": "Turn CSV data into a hosted REST API with CRUD operations for frontend prototypes and demos, without setting up a backend or creating an account.",
+    "category": "Public APIs",
+    "tags": ["api", "csv", "rest", "prototyping"],
+    "addedOn": "2026-10-28",
+    "isFeatured": false
+  },
+  {
     "id": "responsive-images-guide",
     "title": "Responsive Images Guide",
     "url": "http://cloudinary.com/blog/automatically_art_directed_responsive_images",
