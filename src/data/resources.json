@@ -1217,6 +1217,16 @@
     "isFeatured": false
   },
   {
+    "id": "buddy",
+    "title": "Buddy",
+    "url": "https://buddy.works/",
+    "description": "Hosting for apps and websites with built-in git repositories and CI/CD. Free plan available.",
+    "category": "Platforms & Hosting",
+    "tags": ["hosting", "deployment", "ci-cd"],
+    "addedOn": "2026-11-06",
+    "isFeatured": false
+  },
+  {
     "id": "public-apis",
     "title": "Public APIs",
     "url": "https://github.com/public-apis/public-apis",
