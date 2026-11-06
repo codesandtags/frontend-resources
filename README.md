@@ -331,6 +331,7 @@
 
 ### Public APIs
 
+- [FaviconDL](https://favicondl.com) - Free no-key favicon extractor API. `GET /api/extract?url=example.com&size=128` returns a square PNG; optional JSON metadata. CORS-friendly.
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Fake REST API for testing. Perfect for prototypes and demos.
 - [Public APIs](https://github.com/public-apis/public-apis) - Curated list of free APIs. The best resource for finding APIs.
 - [REST Countries](https://restcountries.com/) - Free API for country data. No authentication required.
