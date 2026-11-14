@@ -1815,6 +1815,16 @@
     "isFeatured": false
   },
   {
+    "id": "appscreen",
+    "title": "AppScreen",
+    "url": "https://appscreen.pro/",
+    "description": "Free browser-based App Store and Google Play screenshot maker with device frames, captions and export at every required store size.",
+    "category": "Design Resources",
+    "tags": ["design", "tool", "screenshots", "mobile", "app-store"],
+    "addedOn": "2026-11-14",
+    "isFeatured": false
+  },
+  {
     "id": "chrome-devtools",
     "title": "Chrome DevTools",
     "url": "https://developer.chrome.com/docs/devtools/",
