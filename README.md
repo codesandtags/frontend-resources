@@ -229,6 +229,7 @@
 - [npm trends](https://npmtrends.com/) - Compare npm package download trends. See what
 - [npms](https://npms.io/) - Better npm search. Finds packages by quality, not just popularity.
 - [NVM](https://github.com/nvm-sh/nvm) - Node Version Manager. Switch between Node versions easily.
+- [Online JSON Formatter](https://online-json-formatter-ten.vercel.app/) - Free JSON formatter and validator that auto-fixes common errors, with tree and graph views, JSON compare and converters. Runs entirely in the browser, no sign-up.
 - [PM2](https://pm2.keymetrics.io/) - Production process manager for Node.js. Keeps apps running forever.
 - [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager. Uses symlinks to save space.
 - [PostCSS](http://postcss.org/) - Transform CSS with JavaScript plugins. Powers modern CSS tooling (Autoprefixer, Tailwind, etc.).

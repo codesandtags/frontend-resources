@@ -1627,6 +1627,16 @@
     "isFeatured": false
   },
   {
+    "id": "online-json-formatter",
+    "title": "Online JSON Formatter",
+    "url": "https://online-json-formatter-ten.vercel.app/",
+    "description": "Free JSON formatter and validator that auto-fixes common errors, with tree and graph views, JSON compare and converters. Runs entirely in the browser, no sign-up.",
+    "category": "Utilities",
+    "tags": ["json", "formatter", "validator", "tool"],
+    "addedOn": "2026-11-18",
+    "isFeatured": false
+  },
+  {
     "id": "transform-tools",
     "title": "Transform Tools",
     "url": "https://transform.tools/",
