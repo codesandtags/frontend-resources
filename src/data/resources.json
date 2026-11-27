@@ -1863,5 +1863,15 @@
     "tags": ["react", "ui", "components", "tailwind", "library", "css"],
     "addedOn": "2025-11-15",
     "isFeatured": false
+  },
+  {
+    "id": "tinymast",
+    "title": "Tinymast",
+    "url": "https://tinymast.com/",
+    "description": "Online PDF and image tools: compress images to a target size, resize and convert, and split or merge PDFs. Uploaded files and results are deleted within 24 hours.",
+    "category": "Utilities",
+    "tags": ["pdf", "image", "compression", "converter"],
+    "addedOn": "2026-11-28",
+    "isFeatured": false
   }
 ]

@@ -238,6 +238,7 @@
 - [Shields.io](https://shields.io/) - Badges for GitHub projects. Add status badges to your README.
 - [StackBlitz](https://stackblitz.com/) - Online IDE powered by WebContainers. Runs Node.js in the browser.
 - [Storybook](https://storybook.js.org/) - Tool for building UI components in isolation. Essential for component-driven development.
+- [Tinymast](https://tinymast.com/) - Online PDF and image tools: compress images to a target size, resize and convert, and split or merge PDFs. Uploaded files and results are deleted within 24 hours.
 - [Transform Tools](https://transform.tools/) - Convert between formats (JSON, YAML, TypeScript, etc.). Incredibly useful.
 - [TypeScript Playground](https://www.typescriptlang.org/play) - Online TypeScript editor. Test TS code instantly.
 - [Yarn](https://yarnpkg.com/) - Fast, reliable package manager. Alternative to npm.
